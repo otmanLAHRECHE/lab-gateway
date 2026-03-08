@@ -1,0 +1,70 @@
+boostrap
+{
+  "instrument_code": "Mindray_BC30c",
+  "tests": [
+    { "external_code": "WBC", "external_name": "Globules blancs" },
+    { "external_code": "RBC", "external_name": "Globules rouges" },
+    { "external_code": "HGB", "external_name": "Hémoglobine" },
+    { "external_code": "PLT", "external_name": "Plaquettes" },
+    { "external_code": "ASTv2", "external_name": "ASAT v2" },
+    { "external_code": "CHLRr", "external_name": "Chlor" },
+    { "external_code": "FER", "external_name": "Fer de sang" },
+    { "external_code": "FERR", "external_name": "Ferritine de sagn" }
+  ]
+}
+
+
+
+
+ingest1
+{
+    "barcode":"BC123",
+    "instrument_code":"Mindray_BC30c",
+    "items":[
+        {
+            "code":"WBC",
+            "value":"8.2",
+            "unit":"10^9/L",
+            "flag":"N"
+        },
+        {
+            "code":"RBC",
+            "value":"4.50",
+            "unit":"10^12/L",
+            "flag":"N"
+        },
+        {
+            "code":"HGB",
+            "value":"11.0",
+            "unit":"g/dL",
+            "flag":"L"
+        },
+        {
+            "code":"PLT",
+            "value":"420",
+            "unit":"10^9/L",
+            "flag":"H"}]
+        }
+
+}
+
+ingest2
+{
+    "barcode":"BC124",
+    "instrument_code":"Mindray_BC30c",
+    "items":[
+        {
+            "code":"FER",
+            "value":"5.05",
+            "unit":"umol/L",
+            "flag":"N"
+        },
+        {
+            "code":"FERR",
+            "value":"73",
+            "unit":"ng/mL",
+            "flag":"N"
+        }
+    ]
+        
+}

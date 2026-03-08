@@ -3,6 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ScheduleModule } from '@nestjs/schedule';
 import { ResultatModule } from './resultat/resultat.module';
 import { RefsModule } from './refs/refs.module';
+import { SousAnalyseMapModule } from './mapping/sous-analyse-map.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { RefsModule } from './refs/refs.module';
     
     
     RefsModule,
+    SousAnalyseMapModule,
   ],
 })
 export class AppModule {}

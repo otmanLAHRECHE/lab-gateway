@@ -12,6 +12,10 @@ export class AnalyseRefDto {
   @IsString()
   @MaxLength(255)
   libelle: string;
+
+  @IsString()
+  @MaxLength(255)
+  abreviation: string;
 }
 
 export class SousAnalyseRefDto {

@@ -1,4 +1,11 @@
-import { Column, CreateDateColumn, Entity, Index, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  Index,
+  OneToMany,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
 import { ResultItem } from './result-item.entity';
 
 @Entity('result_batch')
@@ -20,7 +27,8 @@ export class ResultBatch {
   @Column({ type: 'text', nullable: true })
   raw_hl7: string | null;
 
-  @OneToMany(() => ResultItem, (item) => item.batch, { cascade: true })
+  // ✅ remove cascade (we already save items in ResultatService)
+  @OneToMany(() => ResultItem, (item) => item.batch)
   items: ResultItem[];
 
   @CreateDateColumn()

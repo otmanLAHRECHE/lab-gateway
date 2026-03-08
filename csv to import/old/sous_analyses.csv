@@ -1,0 +1,21 @@
+sous_analyse_id	analyse_id	code	libelle	unit	data_type
+20001	200	WBC	Leucocytes	10^9/L	NUMERIC
+20002	200	RBC	Hématies	10^12/L	NUMERIC
+20003	200	HGB	Hémoglobine	g/dL	NUMERIC
+20004	200	HCT	Hématocrite	%	NUMERIC
+20005	200	MCV	VGM (MCV)	fL	NUMERIC
+20006	200	MCH	TCMH (MCH)	pg	NUMERIC
+20007	200	MCHC	CCMH (MCHC)	g/dL	NUMERIC
+20008	200	RDW	IDR / RDW	%	NUMERIC
+20009	200	PLT	Plaquettes	10^9/L	NUMERIC
+20010	200	MPV	VPM (MPV)	fL	NUMERIC
+20011	200	NEUT%	Neutrophiles (%)	%	NUMERIC
+20012	200	LYMPH%	Lymphocytes (%)	%	NUMERIC
+20013	200	MONO%	Monocytes (%)	%	NUMERIC
+20014	200	EOS%	Éosinophiles (%)	%	NUMERIC
+20015	200	BASO%	Basophiles (%)	%	NUMERIC
+20016	200	NEUT#	Neutrophiles (abs)	10^9/L	NUMERIC
+20017	200	LYMPH#	Lymphocytes (abs)	10^9/L	NUMERIC
+20018	200	MONO#	Monocytes (abs)	10^9/L	NUMERIC
+20019	200	EOS#	Éosinophiles (abs)	10^9/L	NUMERIC
+20020	200	BASO#	Basophiles (abs)	10^9/L	NUMERIC

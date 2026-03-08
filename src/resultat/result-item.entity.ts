@@ -1,41 +1,53 @@
-import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  Index,
+  ManyToOne,
+  PrimaryGeneratedColumn,
+  JoinColumn,
+} from 'typeorm';
 import { ResultBatch } from './result-batch.entity';
 import { SousAnalyseRef } from '../refs/sous-analyse-ref.entity';
-import { JoinColumn } from 'typeorm';
 
 @Entity('result_item')
+@Index(['raw_code'])
 export class ResultItem {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @ManyToOne(() => ResultBatch, (batch) => batch.items, { onDelete: 'CASCADE' })
-  batch: ResultBatch;
-
-  @Index()
-  @Column({ type: 'integer' })
+  // ✅ FK column exists, so you can query: where: { batch_id: ... }
+  @Column()
   batch_id: number;
 
-  // OBX-3 code (e.g., GLU, WBC, HGB)
-  @Index()
+  @ManyToOne(() => ResultBatch, (b) => b.items, { onDelete: 'CASCADE' })
+  @JoinColumn({ name: 'batch_id' })
+  batch: ResultBatch;
+
+  // ✅ raw fields (from device/HL7)
   @Column({ type: 'varchar', length: 64 })
-  code: string;
+  raw_code: string;
 
   @Column({ type: 'varchar', length: 255, nullable: true })
-  value: string | null;
+  raw_name?: string | null;
+
+  @Column({ type: 'varchar', length: 64, nullable: true })
+  raw_system?: string | null;
+
+  // ✅ link after mapping (nullable)
+  @Column({ nullable: true })
+sous_analyse_ref_id: number | null;
+
+@ManyToOne(() => SousAnalyseRef, { nullable: true, onDelete: 'SET NULL' })
+@JoinColumn({ name: 'sous_analyse_ref_id' })
+sous_analyse_ref?: SousAnalyseRef | null;
+
+  // existing fields
+  @Column({ type: 'varchar', length: 64, nullable: true })
+  value?: string | null;
 
   @Column({ type: 'varchar', length: 32, nullable: true })
-  unit: string | null;
+  unit?: string | null;
 
-  // OBX-8 abnormal flags (N/H/L, etc.)
   @Column({ type: 'varchar', length: 16, nullable: true })
-  flag: string | null;
-
-  @ManyToOne(() => SousAnalyseRef, { nullable: true, onDelete: 'SET NULL' })
-@JoinColumn({ name: 'sous_analyse_id' })
-sous_analyse?: SousAnalyseRef | null;
-
-
-@Index()
-@Column({ type: 'integer', nullable: true })
-sous_analyse_id: number | null;
+  flag?: string | null;
 }

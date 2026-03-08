@@ -8,10 +8,19 @@ import { ResultatCleanup } from './resultat.cleanup';
 import { In } from 'typeorm';
 import { SousAnalyseRef } from '../refs/sous-analyse-ref.entity';
 import { AnalyseRef } from '../refs/analyse-ref.entity';
+import { SousAnalyseMap } from '../mapping/sous-analyse-map.entity';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([ResultBatch, ResultItem, SousAnalyseRef, AnalyseRef])],
-  providers: [ResultatService, ResultatCleanup],
+  imports: [
+    TypeOrmModule.forFeature([
+      ResultBatch,
+      ResultItem,
+      SousAnalyseRef,
+      AnalyseRef,
+      SousAnalyseMap, 
+    ]),
+  ],
+  providers: [ResultatService],
   controllers: [ResultatController],
 })
 export class ResultatModule {}

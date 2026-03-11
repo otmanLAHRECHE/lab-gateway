@@ -1,0 +1,499 @@
+{
+  "info": {
+    "_postman_id": "4369d96d-7edd-4bf3-a217-0006c61d02b5",
+    "name": "Local getway Lab DME",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "19376819"
+  },
+  "item": [
+    {
+      "name": "ingestion Mirth result 124",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"barcode\":\"BC124\",\r\n    \"instrument_code\":\"Mindray_BC30c\",\r\n    \"items\":[\r\n        {\r\n            \"code\":\"FER\",\r\n            \"value\":\"5.05\",\r\n            \"unit\":\"umol/L\",\r\n            \"flag\":\"N\"\r\n        },\r\n        {\r\n            \"code\":\"FERR\",\r\n            \"value\":\"73\",\r\n            \"unit\":\"ng/mL\",\r\n            \"flag\":\"N\"\r\n        }\r\n    ]\r\n        \r\n}\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/ingest/results",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "ingest",
+            "results"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ingestion Mirth result 123",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"barcode\":\"BC123\",\r\n    \"instrument_code\":\"Mindray_BC30c\",\r\n    \"items\":[\r\n        {\r\n            \"code\":\"WBC\",\r\n            \"value\":\"8.2\",\r\n            \"unit\":\"10^9/L\",\r\n            \"flag\":\"N\"\r\n        },\r\n        {\r\n            \"code\":\"RBC\",\r\n            \"value\":\"4.50\",\r\n            \"unit\":\"10^12/L\",\r\n            \"flag\":\"N\"\r\n        },\r\n        {\r\n            \"code\":\"HGB\",\r\n            \"value\":\"11.0\",\r\n            \"unit\":\"g/dL\",\r\n            \"flag\":\"L\"\r\n        },\r\n        {\r\n            \"code\":\"PLT\",\r\n            \"value\":\"420\",\r\n            \"unit\":\"10^9/L\",\r\n            \"flag\":\"H\"\r\n        }\r\n    ]\r\n\r\n}\r\n\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/ingest/results",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "ingest",
+            "results"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add ref analyses",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"analyses\": [\r\n    {\r\n      \"analyse_id\": 200,\r\n      \"code\": \"FNS\",\r\n      \"libelle\": \"Formule Numération Sanguine (NFS/CBC)\"\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/refs/analyses",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "refs",
+            "analyses"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add sous-analyse ref",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"sous_analyses\": [\r\n    { \"sous_analyse_id\": 20001, \"analyse_id\": 200, \"code\": \"WBC\",   \"libelle\": \"Leucocytes\",                     \"unit\": \"10^9/L\",  \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20002, \"analyse_id\": 200, \"code\": \"RBC\",   \"libelle\": \"Hématies (GR)\",                  \"unit\": \"10^12/L\", \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20003, \"analyse_id\": 200, \"code\": \"HGB\",   \"libelle\": \"Hémoglobine\",                    \"unit\": \"g/dL\",    \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20004, \"analyse_id\": 200, \"code\": \"HCT\",   \"libelle\": \"Hématocrite\",                    \"unit\": \"%\",       \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20005, \"analyse_id\": 200, \"code\": \"MCV\",   \"libelle\": \"VGM (MCV)\",                      \"unit\": \"fL\",      \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20006, \"analyse_id\": 200, \"code\": \"MCH\",   \"libelle\": \"TCMH (MCH)\",                     \"unit\": \"pg\",      \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20007, \"analyse_id\": 200, \"code\": \"MCHC\",  \"libelle\": \"CCMH (MCHC)\",                    \"unit\": \"g/dL\",    \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20008, \"analyse_id\": 200, \"code\": \"RDW\",   \"libelle\": \"IDR / RDW\",                      \"unit\": \"%\",       \"data_type\": \"NUMERIC\" },\r\n\r\n    { \"sous_analyse_id\": 20009, \"analyse_id\": 200, \"code\": \"PLT\",   \"libelle\": \"Plaquettes\",                     \"unit\": \"10^9/L\",  \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20010, \"analyse_id\": 200, \"code\": \"MPV\",   \"libelle\": \"VPM (MPV)\",                      \"unit\": \"fL\",      \"data_type\": \"NUMERIC\" },\r\n\r\n    { \"sous_analyse_id\": 20011, \"analyse_id\": 200, \"code\": \"NEUT%\", \"libelle\": \"Neutrophiles (%)\",               \"unit\": \"%\",       \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20012, \"analyse_id\": 200, \"code\": \"LYMPH%\",\"libelle\": \"Lymphocytes (%)\",               \"unit\": \"%\",       \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20013, \"analyse_id\": 200, \"code\": \"MONO%\", \"libelle\": \"Monocytes (%)\",                  \"unit\": \"%\",       \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20014, \"analyse_id\": 200, \"code\": \"EOS%\",  \"libelle\": \"Éosinophiles (%)\",               \"unit\": \"%\",       \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20015, \"analyse_id\": 200, \"code\": \"BASO%\", \"libelle\": \"Basophiles (%)\",                 \"unit\": \"%\",       \"data_type\": \"NUMERIC\" },\r\n\r\n    { \"sous_analyse_id\": 20016, \"analyse_id\": 200, \"code\": \"NEUT#\", \"libelle\": \"Neutrophiles (abs)\",             \"unit\": \"10^9/L\",  \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20017, \"analyse_id\": 200, \"code\": \"LYMPH#\",\"libelle\": \"Lymphocytes (abs)\",             \"unit\": \"10^9/L\",  \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20018, \"analyse_id\": 200, \"code\": \"MONO#\", \"libelle\": \"Monocytes (abs)\",                \"unit\": \"10^9/L\",  \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20019, \"analyse_id\": 200, \"code\": \"EOS#\",  \"libelle\": \"Éosinophiles (abs)\",             \"unit\": \"10^9/L\",  \"data_type\": \"NUMERIC\" },\r\n    { \"sous_analyse_id\": 20020, \"analyse_id\": 200, \"code\": \"BASO#\", \"libelle\": \"Basophiles (abs)\",               \"unit\": \"10^9/L\",  \"data_type\": \"NUMERIC\" }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/refs/sous-analyses",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "refs",
+            "sous-analyses"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get results enriched",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:3000/results/enriched?barcode=BC123",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3000",
+          "path": [
+            "results",
+            "enriched"
+          ],
+          "query": [
+            {
+              "key": "barcode",
+              "value": "BC123"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Verify raw endpoint result",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/results?barcode=BC123",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "results"
+          ],
+          "query": [
+            {
+              "key": "barcode",
+              "value": "BC123"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create sous analyse map",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"instrument_code\": \"HEMA_01\",\r\n  \"external_code\": \"HCT\",\r\n  \"external_system\": null,\r\n  \"sous_analyse_ref_id\": 20004,\r\n  \"priority\": 0,\r\n  \"is_active\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:3000/sous-analyse-map",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3000",
+          "path": [
+            "sous-analyse-map"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create analyse/sous-analyse ref",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"analyses\": [\r\n    { \"analyse_id\": 55, \"code\": \"NFS\", \"libelle\": \"FNS / NFS\" }\r\n  ],\r\n  \"sous_analyses\": [\r\n    { \"sous_analyse_id\": 30000, \"analyse_id\": 1, \"code\": \"WBC\", \"libelle\": \"Globules blancs\", \"unit\": \"10^9/L\", \"data_type\": \"NM\" }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/refs/import",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "refs",
+            "import"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get refs analyses",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/refs/analyses",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "refs",
+            "analyses"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get ref sous-analyses",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/refs/sous-analyses",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "refs",
+            "sous-analyses"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "import Refs",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "refsFile",
+              "type": "file",
+              "uuid": "329e06a4-2e01-4455-920a-3d5874189457",
+              "src": "/C:/Users/TRAITOR/Desktop/localLabDME_back/lab-gateway/csv to import/ref import.csv"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3000/refs/import-one-csv",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "refs",
+            "import-one-csv"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Bootstrap one device catalog",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"instrument_code\": \"Mindray_BC30c\",\r\n  \"tests\": [\r\n    { \"external_code\": \"WBC\", \"external_name\": \"Globules blancs\" },\r\n    { \"external_code\": \"RBC\", \"external_name\": \"Globules rouges\" },\r\n    { \"external_code\": \"HGB\", \"external_name\": \"Hémoglobine\" },\r\n    { \"external_code\": \"PLT\", \"external_name\": \"Plaquettes\" },\r\n    { \"external_code\": \"ASTv2\", \"external_name\": \"ASAT v2\" },\r\n    { \"external_code\": \"CHLRr\", \"external_name\": \"Chlor\" },\r\n    { \"external_code\": \"FER\", \"external_name\": \"Fer de sang\" },\r\n    { \"external_code\": \"FERR\", \"external_name\": \"Ferritine de sagn\" }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:3000/sous-analyse-map/bootstrap-from-device",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3000",
+          "path": [
+            "sous-analyse-map",
+            "bootstrap-from-device"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all tests by device",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:3000/sous-analyse-map/device-tests?instrument_code=HEMA_01",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3000",
+          "path": [
+            "sous-analyse-map",
+            "device-tests"
+          ],
+          "query": [
+            {
+              "key": "instrument_code",
+              "value": "HEMA_01"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get only mapped tests",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:3000/sous-analyse-map/device-tests?instrument_code=HEMA_01&is_mapped=true",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3000",
+          "path": [
+            "sous-analyse-map",
+            "device-tests"
+          ],
+          "query": [
+            {
+              "key": "instrument_code",
+              "value": "HEMA_01"
+            },
+            {
+              "key": "is_mapped",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get only unmapped tests",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:3000/sous-analyse-map/device-tests?instrument_code=HEMA_01&is_mapped=false",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3000",
+          "path": [
+            "sous-analyse-map",
+            "device-tests"
+          ],
+          "query": [
+            {
+              "key": "instrument_code",
+              "value": "HEMA_01"
+            },
+            {
+              "key": "is_mapped",
+              "value": "false"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get device-tests-all (mapped or not)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:3000/sous-analyse-map/device-tests-all?is_mapped=true",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3000",
+          "path": [
+            "sous-analyse-map",
+            "device-tests-all"
+          ],
+          "query": [
+            {
+              "key": "is_mapped",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "map analyse",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"device_test_id\": 5,\r\n  \"sous_analyse_ref_id\": 101\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:3000/sous-analyse-map/manual-map",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3000",
+          "path": [
+            "sous-analyse-map",
+            "manual-map"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

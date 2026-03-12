@@ -1,4 +1,11 @@
-import { IsArray, IsInt, IsOptional, IsString, MaxLength, ValidateNested } from 'class-validator';
+import {
+  IsArray,
+  IsInt,
+  IsOptional,
+  IsString,
+  MaxLength,
+  ValidateNested,
+} from 'class-validator';
 import { Type } from 'class-transformer';
 
 export class AnalyseRefDto {
@@ -13,9 +20,10 @@ export class AnalyseRefDto {
   @MaxLength(255)
   libelle: string;
 
+  @IsOptional()
   @IsString()
   @MaxLength(255)
-  abreviation: string;
+  domaine_analyse?: string | null;
 }
 
 export class SousAnalyseRefDto {

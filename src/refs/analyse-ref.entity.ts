@@ -2,7 +2,6 @@ import { Column, Entity, Index, PrimaryColumn } from 'typeorm';
 
 @Entity('analyse_ref')
 export class AnalyseRef {
-  // reuse DME ID
   @PrimaryColumn({ type: 'integer' })
   analyse_id: number;
 
@@ -12,4 +11,7 @@ export class AnalyseRef {
 
   @Column({ type: 'varchar', length: 255 })
   libelle: string;
+
+  @Column({ type: 'varchar', length: 255, nullable: true })
+  domaine_analyse: string | null;
 }

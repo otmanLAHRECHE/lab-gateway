@@ -1,4 +1,4 @@
-analyse_id,analyse_code,analyse_libelle,sous_analyse_id,sous_code,sous_libelle,unit,data_type,abreviation
+analyse_id,analyse_code,analyse_libelle,sous_analyse_id,sous_code,sous_libelle,unit,data_type,domaine_analyse
 1,NFS,Numération formule sanguine,101,WBC,Globules blancs,10^9/L,NM,HEMATOLOGIE
 1,NFS,Numération formule sanguine,102,RBC,Globules rouges,10^12/L,NM,HEMATOLOGIE
 1,NFS,Numération formule sanguine,103,HGB,Hémoglobine,g/dL,NM,HEMATOLOGIE

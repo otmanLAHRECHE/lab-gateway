@@ -1,0 +1,384 @@
+Code externe,Nom du test corrigé,Domaine,Unité
+ALT,ALAT,Hépatique,U/L
+AST,ASAT,Hépatique,U/L
+ALP,Phosphatase alcaline,Hépatique,U/L
+GGT,Gamma-GT,Hépatique,U/L
+TBIL,Bilirubine totale,Hépatique,"mg/dL ou µmol/L"
+DBIL,Bilirubine directe,Hépatique,"mg/dL ou µmol/L"
+IBIL,Bilirubine indirecte,Hépatique,"mg/dL ou µmol/L"
+TP,Protéines totales,Hépatique,g/L
+ALB,Albumine,"Hépatique / Rénal",g/L
+AG,Rapport Albumine/Globuline,Hépatique,Ratio
+GLOB,Globulines,Hépatique,g/L
+CHE,Cholinestérase,Hépatique,U/L
+NH3,Ammoniac,Hépatique,µmol/L
+Bile acids,Acides biliaires,Hépatique,µmol/L
+5'Nucleotidase,5'-Nucléotidase,Hépatique,U/L
+UREA,Urée,Rénal,"mmol/L ou mg/dL"
+BUN,Azote uréique,Rénal,mg/dL
+CREA,Créatinine,Rénal,"µmol/L ou mg/dL"
+UA,Acide urique,Rénal,"µmol/L ou mg/dL"
+Cystatin C,Cystatine C,Rénal,mg/L
+CREACL,Clairance de la créatinine,Rénal,mL/min/1.73m²
+GLU,Glucose,Métabolique,"mmol/L ou mg/dL"
+HbA1c,Hémoglobine glyquée,Métabolique,"% ou mmol/mol"
+Fructosamine,Fructosamine,Métabolique,µmol/L
+Lactate,Lactate,Métabolique,mmol/L
+Pyruvate,Pyruvate,Métabolique,mmol/L
+Corps cétoniques,Corps cétoniques,Métabolique,"mg/dL ou mmol/L"
+BHB,Bêta-Hydroxybutyrate,Métabolique,mmol/L
+Acetoacetate,Acétoacétate,Métabolique,"mg/dL ou mmol/L"
+TCHO,Cholestérol total,Lipidique,"mmol/L ou mg/dL"
+TG,Triglycérides,Lipidique,"mmol/L ou mg/dL"
+HDL,HDL-Cholestérol,Lipidique,"mmol/L ou mg/dL"
+LDL,LDL-Cholestérol,Lipidique,"mmol/L ou mg/dL"
+VLDL,VLDL-Cholestérol,Lipidique,"mmol/L ou mg/dL"
+ApoA1,Apolipoprotéine A1,Lipidique,g/L
+ApoB,Apolipoprotéine B,Lipidique,g/L
+Lp(a),Lipoprotéine (a),Lipidique,"mg/dL ou nmol/L"
+NonHDL-C,Cholestérol non-HDL,Lipidique,"mmol/L ou mg/dL"
+CK,Créatine kinase,Cardiaque,U/L
+CKMB,CK-MB,Cardiaque,"U/L ou %"
+LDH,Lactate déshydrogénase,Cardiaque,U/L
+HBDH,Hydroxybutyrate déshydrogénase,Cardiaque,U/L
+Myoglobin,Myoglobine,Cardiaque,ng/mL
+Troponin I,Troponine I,Cardiaque,ng/mL
+Troponin T,Troponine T,Cardiaque,ng/mL
+Na,Sodium,Électrolytes,mmol/L
+K,Potassium,Électrolytes,mmol/L
+Cl,Chlorures,Électrolytes,mmol/L
+Ca,Calcium,Électrolytes,"mmol/L ou mg/dL"
+iCa,Calcium ionisé,Électrolytes,mmol/L
+Mg,Magnésium,Électrolytes,"mmol/L ou mg/dL"
+P,Phosphore,Électrolytes,"mmol/L ou mg/dL"
+Bicarbonate,Bicarbonates,Électrolytes,mmol/L
+CO2 total,CO2 total,Électrolytes,mmol/L
+Anion Gap,Trou anionique,Électrolytes,mmol/L
+Osmolality,Osmolalité,Électrolytes,mOsm/kg
+Fe,Fer,Carence,µmol/L
+TIBC,Capacité totale de fixation du fer,Carence,µmol/L
+UIBC,Capacité de fixation du fer non saturée,Carence,µmol/L
+Transferrin,Transferrine,Carence,g/L
+Transferrin Sat,Saturation de la transferrine,Carence,%
+Ferritin,Ferritine,Carence,ng/mL
+AMY,Amylase,Pancréatique,U/L
+LIP,Lipase,Pancréatique,U/L
+P-type amylase,Amylase pancréatique,Pancréatique,U/L
+Trypsin,Trypsine,Pancréatique,ng/mL
+CRP,Protéine C réactive,Inflammatoire,mg/L
+hsCRP,CRP ultrasensible,Inflammatoire,mg/L
+ADA,Adénosine désaminase,Inflammatoire,U/L
+ACE,Enzyme de conversion de l'angiotensine,Inflammatoire,U/L
+Alpha-1-AT,Alpha-1-antitrypsine,Inflammatoire,g/L
+Ceruloplasmin,Céruloplasmine,Inflammatoire,g/L
+Haptoglobin,Haptoglobine,Inflammatoire,g/L
+Cu,Cuivre,Oligo-élément,µmol/L
+Zn,Zinc,Oligo-élément,µmol/L
+Se,Sélénium,Oligo-élément,µg/L
+Pb,Plomb,Toxique,µmol/L
+As,Arsenic,Toxique,µmol/L
+Hg,Mercure,Toxique,µg/L
+WBC,Globules blancs,Hématologie,"10³/µL ou G/L"
+RBC,Globules rouges,Hématologie,"10⁶/µL ou T/L"
+HGB,Hémoglobine,Hématologie,g/dL
+HCT,Hématocrite,Hématologie,%
+MCV,Volume globulaire moyen,Hématologie,fL
+MCH,Teneur corpusculaire moyenne en hémoglobine,Hématologie,pg
+MCHC,Concentration corpusculaire moyenne en hémoglobine,Hématologie,g/dL
+RDW-CV,"Indice de distribution des globules rouges - CV",Hématologie,%
+RDW-SD,"Indice de distribution des globules rouges - SD",Hématologie,fL
+RETIC,Réticulocytes,Hématologie,"% ou 10³/µL"
+RET-He,Hémoglobine réticulocytaire,Hématologie,pg
+IRF,Fraction immature des réticulocytes,Hématologie,%
+PLT,Plaquettes,Hématologie,"10³/µL ou G/L"
+MPV,Volume plaquettaire moyen,Hématologie,fL
+PDW,Distribution des plaquettes,Hématologie,fL
+PCT,Thrombocrite,Hématologie,%
+IPF,Fraction immature des plaquettes,Hématologie,%
+NEUT,Neutrophiles,Hématologie,"10³/µL ou %"
+LYMPH,Lymphocytes,Hématologie,"10³/µL ou %"
+MONO,Monocytes,Hématologie,"10³/µL ou %"
+EO,Éosinophiles,Hématologie,"10³/µL ou %"
+BASO,Basophiles,Hématologie,"10³/µL ou %"
+IG,Granulocytes immatures,Hématologie,"10³/µL ou %"
+ESR,Vitesse de sédimentation,Inflammatoire,mm/h
+PT,Temps de prothrombine,Hémostase,secondes
+INR,INR,Hémostase,ratio
+PT%,Taux de prothrombine,Hémostase,%
+APTT,Temps de céphaline activée,Hémostase,secondes
+FIB,Fibrinogène,Hémostase,g/L
+TT,Temps de thrombine,Hémostase,secondes
+D-Dimer,D-Dimères,Hémostase,"µg/L ou ng/mL"
+FDP,Produits de dégradation de la fibrine,Hémostase,µg/mL
+ATIII,Antithrombine III,Hémostase,%
+Protein C,Protéine C,Hémostase,%
+Protein S,Protéine S,Hémostase,%
+Plasminogen,Plasminogène,Hémostase,%
+vWF Ag,Facteur von Willebrand antigène,Hémostase,%
+vWF Act,Facteur von Willebrand activité,Hémostase,%
+Bleeding time,Temps de saignement,Hémostase,minutes
+TSH,TSH,Thyroïdien,mUI/L
+FT3,T3 libre,Thyroïdien,pmol/L
+FT4,T4 libre,Thyroïdien,pmol/L
+T3,T3 totale,Thyroïdien,nmol/L
+T4,T4 totale,Thyroïdien,nmol/L
+Anti-TPO,Anticorps anti-thyroperoxydase,Thyroïdien,UI/mL
+Anti-TG,Anticorps anti-thyroglobuline,Thyroïdien,UI/mL
+TBG,Thyroxine-binding globulin,Thyroïdien,mg/L
+Thyroglobulin,Thyroglobuline,Thyroïdien,ng/mL
+TSI,Immunoglobulines stimulant la thyroïde,Thyroïdien,UI/mL
+Calcitonin,Calcitonine,Thyroïdien,pg/mL
+FSH,FSH,Fertilité,UI/L
+LH,LH,Fertilité,UI/L
+PRL,Prolactine,Fertilité,"mUI/L ou ng/mL"
+E2,Œstradiol,Fertilité,"pmol/L ou pg/mL"
+PROG,Progestérone,Fertilité,"nmol/L ou ng/mL"
+TESTO,Testostérone,Fertilité,"nmol/L ou ng/mL"
+Free Testo,Testostérone libre,Fertilité,"pg/mL ou pmol/L"
+SHBG,Globuline liant les hormones sexuelles,Fertilité,nmol/L
+AMH,Hormone anti-mullérienne,Fertilité,"ng/mL ou pmol/L"
+Inhibin B,Inhibine B,Fertilité,pg/mL
+DHEA-S,DHEA-Sulfate,Fertilité,"µmol/L ou ng/mL"
+DHEA,DHEA,Fertilité,ng/mL
+Androstenedione,Androstènedione,Fertilité,ng/mL
+17-OHP,17-Hydroxyprogestérone,Fertilité,ng/mL
+DHT,Dihydrotestostérone,Fertilité,ng/mL
+HCG,hCG totale,Fertilité,UI/L
+HCGb,hCG bêta,Fertilité,UI/L
+ACTH,ACTH,Hypophysaire,"pg/mL ou pmol/L"
+Cortisol,Cortisol,Surrénalien,"µg/dL ou nmol/L"
+Free Cortisol,Cortisol libre urinaire,Surrénalien,"µg/24h ou nmol/24h"
+Salivary Cortisol,Cortisol salivaire,Surrénalien,ng/mL
+Aldosterone,Aldostérone,Surrénalien,"ng/dL ou pmol/L"
+Renin,Rénine,Surrénalien,ng/mL/h
+PRA,Activité rénine plasmatique,Surrénalien,ng/mL/h
+GH,Hormone de croissance,Hypophysaire,ng/mL
+IGF-1,"IGF-1 (Somatomédine C)",Hypophysaire,ng/mL
+IGFBP-3,IGFBP-3,Hypophysaire,mg/L
+PTH,Parathormone,Osseux,"pg/mL ou pmol/L"
+Vitamin D,Vitamine D 25-OH,Osseux,ng/mL
+1,25 Vit D,Vitamine D 1,25-OH,Osseux,pg/mL
+Osteocalcin,Ostéocalcine,Osseux,ng/mL
+P1NP,P1NP,Osseux,µg/L
+CTX,"CrossLaps (CTX)",Osseux,ng/mL
+BALP,Phosphatase alcaline osseuse,Osseux,"U/L ou %"
+Gastrin,Gastrine,Digestif,pg/mL
+VIP,VIP,Digestif,pg/mL
+Glucagon,Glucagon,Pancréatique,pg/mL
+Insulin,Insuline,Pancréatique,µU/mL
+C-peptide,Peptide C,Pancréatique,ng/mL
+Proinsulin,Proinsuline,Pancréatique,pmol/L
+HBsAg,Antigène HBs,Virale,-
+HBsAb,Anticorps anti-HBs,Virale,mUI/mL
+HBcAb,Anticorps anti-HBc,Virale,-
+HBeAg,Antigène HBe,Virale,-
+HBeAb,Anticorps anti-HBe,Virale,-
+HCV Ab,Anticorps anti-VHC,Virale,-
+HIV Ab/Ag,"Anticorps anti-VIH + Ag p24",Virale,-
+HIV Viral Load,Charge virale VIH,Virale,copies/mL
+EBV VCA IgG,EBV VCA IgG,Virale,UI/mL
+EBV VCA IgM,EBV VCA IgM,Virale,-
+EBNA IgG,EBV EBNA IgG,Virale,-
+CMV IgG,CMV IgG,Virale,UI/mL
+CMV IgM,CMV IgM,Virale,-
+HSV 1/2 IgG,HSV 1/2 IgG,Virale,-
+HSV 1/2 IgM,HSV 1/2 IgM,Virale,-
+VZV IgG,VZV IgG,Virale,-
+VZV IgM,VZV IgM,Virale,-
+Rubella IgG,IgG rubéole,Virale,UI/mL
+Rubella IgM,IgM rubéole,Virale,-
+Measles IgG,IgG rougeole,Virale,-
+Measles IgM,IgM rougeole,Virale,-
+Mumps IgG,IgG oreillons,Virale,-
+Mumps IgM,IgM oreillons,Virale,-
+Parvovirus B19 IgG,Parvovirus B19 IgG,Virale,-
+Parvovirus B19 IgM,Parvovirus B19 IgM,Virale,-
+Dengue IgG,Dengue IgG,Virale,-
+Dengue IgM,Dengue IgM,Virale,-
+Zika IgG,Zika IgG,Virale,-
+Zika IgM,Zika IgM,Virale,-
+Chikungunya IgG,Chikungunya IgG,Virale,-
+Chikungunya IgM,Chikungunya IgM,Virale,-
+Toxo IgG,IgG toxoplasmose,Parasitaire,UI/mL
+Toxo IgM,IgM toxoplasmose,Parasitaire,-
+Toxo PCR,PCR toxoplasmose,Parasitaire,-
+Hydatidosis,Hydatidose,Parasitaire,-
+Leishmania,Leishmaniose,Parasitaire,-
+Malaria,Paludisme,Parasitaire,-
+Schistosoma,Bilharziose,Parasitaire,-
+Strongyloides,Anguillulose,Parasitaire,-
+PSA,PSA total,Tumoral,ng/mL
+Free PSA,PSA libre,Tumoral,ng/mL
+fPSA ratio,Ratio PSA libre/total,Tumoral,%
+CEA,Antigène carcinoembryonnaire,Tumoral,ng/mL
+AFP,Alpha-fœtoprotéine,Tumoral,ng/mL
+CA125,CA 125,Tumoral,U/mL
+CA153,CA 15-3,Tumoral,U/mL
+CA199,CA 19-9,Tumoral,U/mL
+CA27.29,CA 27-29,Tumoral,U/mL
+CA72-4,CA 72-4,Tumoral,U/mL
+Cyfra 21-1,CYFRA 21-1,Tumoral,ng/mL
+NSE,Enolase neurone-spécifique,Tumoral,ng/mL
+ProGRP,ProGRP,Tumoral,pg/mL
+S100,Protéine S100,Tumoral,µg/L
+HE4,HE4,Tumoral,pmol/L
+ROMA index,Index ROMA,Tumoral,-
+Thyroglobulin,Thyroglobuline,Tumoral,ng/mL
+TgAb,Anticorps anti-thyroglobuline,Tumoral,UI/mL
+β2M,Bêta-2-microglobuline,Tumoral,mg/L
+IgG,Immunoglobuline G,Immunitaire,g/L
+IgA,Immunoglobuline A,Immunitaire,g/L
+IgM,Immunoglobuline M,Immunitaire,g/L
+IgE,Immunoglobuline E,Immunitaire,UI/mL
+IgD,Immunoglobuline D,Immunitaire,mg/L
+Kappa,Chaînes légères kappa,Immunitaire,mg/L
+Lambda,Chaînes légères lambda,Immunitaire,mg/L
+Kappa/Lambda,Rapport kappa/lambda,Immunitaire,Ratio
+Protein electro,Électrophorèse des protéines,Immunitaire,-
+Immunofixation,Immunofixation,Immunitaire,-
+ANA,Anticorps antinucléaires,Auto-immun,titres
+Anti-dsDNA,Anti-ADN natif,Auto-immun,UI/mL
+Anti-ENA,Anti-ENA,Auto-immun,-
+Anti-Sm,Anti-Sm,Auto-immun,-
+Anti-RNP,Anti-RNP,Auto-immun,-
+Anti-SSA/Ro,Anti-SSA/Ro,Auto-immun,-
+Anti-SSB/La,Anti-SSB/La,Auto-immun,-
+Anti-Scl70,Anti-Scl70,Auto-immun,-
+Anti-Jo1,Anti-Jo1,Auto-immun,-
+Anti-CCP,Anti-CCP,Auto-immun,U/mL
+RF,Facteur rhumatoïde,Auto-immun,UI/mL
+ASLO,Antistreptolysine O,Auto-immun,UI/mL
+ANCA,ANCA,Auto-immun,-
+Anti-MPO,Anti-MPO,Auto-immun,-
+Anti-PR3,Anti-PR3,Auto-immun,-
+Anti-GBM,Anti-membrane basale glomérulaire,Auto-immun,-
+Anti-mitochondrial,Anti-mitochondries,Auto-immun,-
+Anti-smooth muscle,Anti-muscle lisse,Auto-immun,-
+Anti-LKM,Anti-LKM,Auto-immun,-
+Anti-parietal,Anti-cellules pariétales,Auto-immun,-
+Anti-intrinsic factor,Anti-facteur intrinsèque,Auto-immun,-
+Anti-transglutaminase,Anti-transglutaminase,Auto-immun,U/mL
+Anti-endomysium,Anti-endomysium,Auto-immun,-
+Anti-gliadin,Anti-gliadine,Auto-immun,U/mL
+Cold agglutinins,Agglutinines froides,Auto-immun,-
+Cryoglobulins,Cryoglobulines,Auto-immun,-
+C3,Complément C3,Complément,g/L
+C4,Complément C4,Complément,g/L
+CH50,Complément total (CH50),Complément,U/mL
+C1 esterase inh,Inhibiteur de la C1 estérase,Complément,mg/dL
+Folate,Folates,Carence,ng/mL
+RBC Folate,Folates érythrocytaires,Carence,ng/mL
+Vitamin B12,Vitamine B12,Carence,pg/mL
+Vitamin B1,Vitamine B1,Carence,nmol/L
+Vitamin B6,Vitamine B6,Carence,nmol/L
+Vitamin A,Vitamine A,Carence,µmol/L
+Vitamin E,Vitamine E,Carence,µmol/L
+Vitamin C,Vitamine C,Carence,mg/L
+ECBU,Examen cytobactériologique des urines,Microbiologie,-
+CSU,Culture urines quantitative,Microbiologie,UFC/mL
+Hemoculture,Hémoculture aérobie,Microbiologie,-
+Hemoculture Ana,Hémoculture anaérobie,Microbiologie,-
+Coproculture,Coproculture standard,Microbiologie,-
+CSP,Culture des crachats,Microbiologie,-
+LCR culture,Culture du LCR,Microbiologie,-
+Liquid culture,Culture de liquide biologique,Microbiologie,-
+Pus culture,Culture de pus,Microbiologie,-
+PVC,Prélèvement vaginal avec culture,Microbiologie,-
+PU,Prélèvement urétral,Microbiologie,-
+Spermo culture,Spermoculture,Microbiologie,-
+Culture_EC,Culture d'écouvillon,Microbiologie,-
+Anaerobic culture,Culture anaérobie,Microbiologie,-
+Mycobacteria culture,Culture mycobactéries,Microbiologie,-
+Mycobacteria ID,Identification mycobactéries,Microbiologie,-
+Fungi culture,Culture fongique,Microbiologie,-
+Fungi ID,Identification fongique,Microbiologie,-
+Antibiogramme,"Antibiogramme (AST)",Microbiologie,-
+CMI,Concentrations minimales inhibitrices,Microbiologie,µg/mL
+CMB,Concentrations minimales bactéricides,Microbiologie,µg/mL
+BK,BAAR microscopie,Microbiologie,-
+Gram,Coloration de Gram,Microbiologie,-
+Ziehl,Coloration de Ziehl-Neelsen,Microbiologie,-
+India ink,Encre de Chine,Microbiologie,-
+Lactophenol,Lactophénol,Microbiologie,-
+KOH,Examen à la potasse,Microbiologie,-
+Catalase,Test catalase,Microbiologie,-
+Coagulase,Test coagulase,Microbiologie,-
+Oxydase,Test oxydase,Microbiologie,-
+Urease,Test uréase,Microbiologie,-
+Indole,Test indole,Microbiologie,-
+Citrate,Test citrate,Microbiologie,-
+Bile esculin,Test bile esculine,Microbiologie,-
+Optochin,Test optochine,Microbiologie,-
+Novobiocin,Test novobiocine,Microbiologie,-
+Beta-lactamase,Test bêta-lactamase,Microbiologie,-
+Bx,Biopsie standard,Pathologie,-
+Bx extemporanée,Biopsie extemporanée,Pathologie,-
+Pce opératoire,Pièce opératoire,Pathologie,-
+Cytologie,Examen cytologique,Pathologie,-
+Frottis,Frottis cervico-utérin,Pathologie,-
+LBC,Cytologie en milieu liquide,Pathologie,-
+ACP,Analyse cytopathologique,Pathologie,-
+Liquide cytologie,Cytologie des liquides,Pathologie,-
+Ponction,Ponction à l'aiguille fine,Pathologie,-
+IHC,Immunohistochimie,Pathologie,-
+FISH tissue,FISH sur tissu,Pathologie,-
+Her2 IHC,Statut HER2,Pathologie,"Score 0-3+"
+ER IHC,Récepteurs aux œstrogènes,Pathologie,"% ou Allred score"
+PR IHC,Récepteurs à la progestérone,Pathologie,"% ou Allred score"
+Ki67,Ki67,Pathologie,%
+P53,P53,Pathologie,%
+PD-L1,"PD-L1 (CPS/TPS)",Pathologie,Score
+MMR,Statut MMR,Pathologie,-
+MSI,Instabilité microsatellitaire,Pathologie,-
+PCR qualitative,PCR qualitative,Moléculaire,-
+PCR quantitative,"PCR quantitative (charge virale)",Moléculaire,"copies/mL ou UI/mL"
+PCR SARS-CoV-2,PCR SARS-CoV-2,Moléculaire,-
+PCR VHB,PCR VHB,Moléculaire,UI/mL
+PCR VHC,PCR VHC,Moléculaire,UI/mL
+PCR VIH,PCR VIH,Moléculaire,copies/mL
+PCR CMV,PCR CMV,Moléculaire,UI/mL
+PCR EBV,PCR EBV,Moléculaire,copies/mL
+PCR HSV,PCR HSV 1/2,Moléculaire,-
+PCR VZV,PCR VZV,Moléculaire,-
+PCR BK virus,PCR BK virus,Moléculaire,copies/mL
+PCR TB,PCR Tuberculose,Moléculaire,-
+PCR Toxo,PCR Toxoplasmose,Moléculaire,-
+PCR HPV,"PCR HPV (génotypage)",Moléculaire,-
+PCR Borrelia,PCR Borrelia,Moléculaire,-
+PCR Fungi,PCR champignons,Moléculaire,-
+Multiplex respiratory,Panel respiratoire multiplex,Moléculaire,-
+Multiplex gastro,Panel gastro-intestinal multiplex,Moléculaire,-
+Multiplex meningitis,Panel méningite multiplex,Moléculaire,-
+Caryotype,Caryotype standard,Cytogénétique,-
+Caryotype médullaire,Caryotype médullaire,Cytogénétique,-
+FISH,Hybridation in situ fluorescente,Cytogénétique,-
+FISH her2,FISH HER2,Cytogénétique,Ratio
+FISH 1p19q,FISH 1p19q,Cytogénétique,-
+FISH BCR-ABL,FISH BCR-ABL,Cytogénétique,%
+FISH MLL,FISH MLL,Cytogénétique,-
+Microarray,"Puce à ADN chromosomique (CGH)",Cytogénétique,-
+MLPA,MLPA,Cytogénétique,-
+NGS panel,"Panel NGS ciblé (gènes spécifiques)",Moléculaire,-
+NGS ADN,Séquençage NGS ADN,Moléculaire,-
+NGS ARN,"Séquençage NGS ARN (fusions)",Moléculaire,-
+NGS liquid biopsy,Biopsie liquide NGS,Moléculaire,-
+Seq Sanger,Séquençage Sanger,Moléculaire,-
+Pyrosequencing,Pyroséquençage,Moléculaire,-
+Methylation,Analyse de méthylation,Épigénétique,-
+MGMT methylation,Méthylation MGMT,Épigénétique,%
+Fragile X,Syndrome X fragile,Moléculaire,-
+BRCA1/2,"BRCA1/2 (séquençage)",Moléculaire,-
+Factor V Leiden,Facteur V Leiden,Moléculaire,-
+Prothrombin mutation,Mutation prothrombine,Moléculaire,-
+HFE,"Hémochromatose (HFE)",Moléculaire,-
+HLA-B27,HLA-B27,Moléculaire,-
+HLA typing,Typage HLA,Immunogénétique,-
+Clonality Ig,"Clonalité Ig (lymphome)",Moléculaire,-
+Clonality TCR,"Clonalité TCR (lymphome)",Moléculaire,-
+Microsatellites,Analyse microsatellites,Moléculaire,-
+DPD genotyping,"Génotypage DPD (pharmacogénétique)",Pharmacogénétique,-
+TPMT genotyping,Génotypage TPMT,Pharmacogénétique,-
+CYP2C19,Génotypage CYP2C19,Pharmacogénétique,-
+CYP2D6,Génotypage CYP2D6,Pharmacogénétique,-
+CYP3A5,Génotypage CYP3A5,Pharmacogénétique,-
+UGT1A1,Génotypage UGT1A1,Pharmacogénétique,-

@@ -1,0 +1,18 @@
+{
+  "instrument_code": "Microbiology",
+  "tests": [
+    { "external_code": "ECBU", "external_name": "Examen cytobactériologique des urines" },
+    { "external_code": "CSU", "external_name": "Culture urines" },
+    { "external_code": "Hemoculture", "external_name": "Hémoculture" },
+    { "external_code": "Coproculture", "external_name": "Coproculture" },
+    { "external_code": "CSP", "external_name": "Culture des crachats" },
+    { "external_code": "PVC", "external_name": "Prélèvement vaginal avec culture" },
+    { "external_code": "PU", "external_name": "Prélèvement urétral" },
+    { "external_code": "Culture_EC", "external_name": "Culture de l'écouvillon" },
+    { "external_code": "Antibiogramme", "external_name": "Antibiogramme" },
+    { "external_code": "BK", "external_name": "Recherche de bacilles acido-alcoolo-résistants" },
+    { "external_code": "Mycologie", "external_name": "Examen mycologique" },
+    { "external_code": "Parasitologie", "external_name": "Examen parasitologique" },
+    { "external_code": "Gram", "external_name": "Coloration de Gram" }
+  ]
+}

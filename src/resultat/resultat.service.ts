@@ -174,45 +174,97 @@ export class ResultatService {
     };
   }
 
-  async getLatestEnrichedByBarcode(barcode: string) {
-  const batch = await this.batchRepo.findOne({
-    where: { barcode },
-    order: { received_at: 'DESC' },
-  });
+async getLatestEnrichedByBarcode(barcode: string) {
+  const since = new Date(Date.now() - 24 * 60 * 60 * 1000);
 
-  if (!batch) return null;
+  const batches = await this.batchRepo
+    .createQueryBuilder('b')
+    .where('b.barcode = :barcode', { barcode })
+    .andWhere('b.received_at >= :since', { since: since.toISOString() })
+    .orderBy('b.received_at', 'DESC')
+    .addOrderBy('b.id', 'DESC')
+    .getMany();
+
+  if (!batches.length) return null;
+
+  const batchIds = batches.map((b) => b.id);
 
   const items = await this.itemRepo.find({
-    where: { batch_id: batch.id },
-    order: { raw_code: 'ASC' },
+    where: { batch_id: In(batchIds) },
+    order: { batch_id: 'DESC' },
   });
 
-  // Split mapped vs unmapped
-  const mapped = items.filter((i) => i.sous_analyse_ref_id != null);
-  const unmapped = items.filter((i) => i.sous_analyse_ref_id == null);
+  const batchById = new Map<number, ResultBatch>(
+    batches.map((b) => [b.id, b]),
+  );
 
-  // Load SousAnalyseRefs by FK
+  // newest mapped result per sous_analyse_ref_id
+  const latestMappedBySousId = new Map<number, ResultItem>();
+
+  // newest unmapped result per instrument+raw_code
+  const latestUnmappedByKey = new Map<string, ResultItem>();
+
+  for (const it of items) {
+    const batch = batchById.get(it.batch_id);
+    if (!batch) continue;
+
+    if (it.sous_analyse_ref_id != null) {
+      const sousId = it.sous_analyse_ref_id as number;
+
+      if (!latestMappedBySousId.has(sousId)) {
+        latestMappedBySousId.set(sousId, it);
+      } else {
+        const current = latestMappedBySousId.get(sousId)!;
+        const currentBatch = batchById.get(current.batch_id);
+
+        if (currentBatch && batch.received_at > currentBatch.received_at) {
+          latestMappedBySousId.set(sousId, it);
+        }
+      }
+    } else {
+      const key =
+        `${batch.instrument_code ?? ''}|${it.raw_code ?? ''}`.toUpperCase();
+
+      if (!latestUnmappedByKey.has(key)) {
+        latestUnmappedByKey.set(key, it);
+      } else {
+        const current = latestUnmappedByKey.get(key)!;
+        const currentBatch = batchById.get(current.batch_id);
+
+        if (currentBatch && batch.received_at > currentBatch.received_at) {
+          latestUnmappedByKey.set(key, it);
+        }
+      }
+    }
+  }
+
+  const mapped = Array.from(latestMappedBySousId.values());
+  const unmapped = Array.from(latestUnmappedByKey.values());
+
   const sousIds = [...new Set(mapped.map((i) => i.sous_analyse_ref_id as number))];
 
   const sousRefs = sousIds.length
-    ? await this.sousRefRepo.find({ where: { sous_analyse_id: In(sousIds) } })
+    ? await this.sousRefRepo.find({
+        where: { sous_analyse_id: In(sousIds) },
+      })
     : [];
 
   const sousById = new Map<number, SousAnalyseRef>(
     sousRefs.map((s) => [s.sous_analyse_id, s]),
   );
 
-  // Load AnalyseRefs
   const analyseIds = [...new Set(sousRefs.map((s) => s.analyse_id))];
+
   const analyses = analyseIds.length
-    ? await this.analyseRefRepo.find({ where: { analyse_id: In(analyseIds) } })
+    ? await this.analyseRefRepo.find({
+        where: { analyse_id: In(analyseIds) },
+      })
     : [];
 
   const analyseById = new Map<number, AnalyseRef>(
     analyses.map((a) => [a.analyse_id, a]),
   );
 
-  // Group by analyse_id
   const groups = new Map<number, any>();
 
   for (const it of mapped) {
@@ -221,12 +273,21 @@ export class ResultatService {
     if (!sous) continue;
 
     const ana = analyseById.get(sous.analyse_id);
+    const batch = batchById.get(it.batch_id);
 
     if (!groups.has(sous.analyse_id)) {
       groups.set(sous.analyse_id, {
         analyse: ana
-          ? { id: ana.analyse_id, code: ana.code, libelle: ana.libelle }
-          : { id: sous.analyse_id, code: null, libelle: null },
+          ? {
+              id: ana.analyse_id,
+              code: ana.code,
+              libelle: ana.libelle,
+            }
+          : {
+              id: sous.analyse_id,
+              code: null,
+              libelle: null,
+            },
         items: [],
       });
     }
@@ -247,24 +308,46 @@ export class ResultatService {
         system: it.raw_system ?? null,
       },
       value: it.value,
+      batch_id: it.batch_id,
+      received_at: batch?.received_at ?? null,
+      instrument_code: batch?.instrument_code ?? null,
     });
   }
 
+  for (const group of groups.values()) {
+    group.items.sort((a: any, b: any) =>
+      String(a.sous_analyse.code).localeCompare(String(b.sous_analyse.code)),
+    );
+  }
+
+  const latestBatch = batches[0];
+
   return {
-    barcode: batch.barcode,
-    instrument_code: batch.instrument_code,
-    received_at: batch.received_at,
-    analyses: Array.from(groups.values()),
-    unmapped_items: unmapped.map((it) => ({
-      raw_code: it.raw_code,
-      raw_name: it.raw_name ?? null,
-      raw_system: it.raw_system ?? null,
-      value: it.value,
-      unit: it.unit,
-      flag: it.flag,
-    })),
+    barcode: latestBatch.barcode,
+    instrument_code: latestBatch.instrument_code,
+    received_at: latestBatch.received_at,
+    merge_window_hours: 24,
+    analyses: Array.from(groups.values()).sort((a, b) =>
+      String(a.analyse.code ?? '').localeCompare(String(b.analyse.code ?? '')),
+    ),
+    unmapped_items: unmapped.map((it) => {
+      const batch = batchById.get(it.batch_id);
+      return {
+        raw_code: it.raw_code,
+        raw_name: it.raw_name ?? null,
+        raw_system: it.raw_system ?? null,
+        value: it.value,
+        unit: it.unit,
+        flag: it.flag,
+        batch_id: it.batch_id,
+        received_at: batch?.received_at ?? null,
+        instrument_code: batch?.instrument_code ?? null,
+      };
+    }),
   };
 }
+
+
 
   async deleteOlderThan(hours: number) {
     const cutoff = new Date(Date.now() - hours * 60 * 60 * 1000);

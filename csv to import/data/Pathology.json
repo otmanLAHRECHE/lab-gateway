@@ -1,0 +1,14 @@
+{
+  "instrument_code": "Pathology",
+  "tests": [
+    { "external_code": "Bx", "external_name": "Biopsie" },
+    { "external_code": "Pce_operatoire", "external_name": "Pièce opératoire" },
+    { "external_code": "Cytologie", "external_name": "Examen cytologique" },
+    { "external_code": "Frottis", "external_name": "Frottis cervico-utérin" },
+    { "external_code": "ACP", "external_name": "Analyse cytopathologique" },
+    { "external_code": "IHC", "external_name": "Immunohistochimie" },
+    { "external_code": "Extemporane", "external_name": "Examen extemporané" },
+    { "external_code": "Liquide", "external_name": "Cytologie des liquides" },
+    { "external_code": "Ponction", "external_name": "Ponction à l'aiguille fine" }
+  ]
+}

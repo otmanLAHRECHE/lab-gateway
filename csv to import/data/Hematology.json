@@ -1,0 +1,25 @@
+{
+  "instrument_code": "Hematology_Analyzer",
+  "tests": [
+    { "external_code": "WBC", "external_name": "Globules blancs" },
+    { "external_code": "RBC", "external_name": "Globules rouges" },
+    { "external_code": "HGB", "external_name": "Hémoglobine" },
+    { "external_code": "HCT", "external_name": "Hématocrite" },
+    { "external_code": "MCV", "external_name": "Volume globulaire moyen" },
+    { "external_code": "MCH", "external_name": "Teneur corpusculaire moyenne en hémoglobine" },
+    { "external_code": "MCHC", "external_name": "Concentration corpusculaire moyenne en hémoglobine" },
+    { "external_code": "RDW", "external_name": "Indice de distribution des globules rouges" },
+    { "external_code": "PLT", "external_name": "Plaquettes" },
+    { "external_code": "MPV", "external_name": "Volume plaquettaire moyen" },
+    { "external_code": "NEUT", "external_name": "Neutrophiles" },
+    { "external_code": "LYMPH", "external_name": "Lymphocytes" },
+    { "external_code": "MONO", "external_name": "Monocytes" },
+    { "external_code": "EO", "external_name": "Éosinophiles" },
+    { "external_code": "BASO", "external_name": "Basophiles" },
+    { "external_code": "ESR", "external_name": "Vitesse de sédimentation" },
+    { "external_code": "PT", "external_name": "Temps de prothrombine" },
+    { "external_code": "APTT", "external_name": "Temps de céphaline activée" },
+    { "external_code": "INR", "external_name": "INR" },
+    { "external_code": "FIB", "external_name": "Fibrinogène" }
+  ]
+}

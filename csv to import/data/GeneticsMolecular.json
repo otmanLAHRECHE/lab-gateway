@@ -1,0 +1,18 @@
+{
+  "instrument_code": "Molecular_Genetics",
+  "tests": [
+    { "external_code": "PCR", "external_name": "PCR qualitative" },
+    { "external_code": "PCR_quant", "external_name": "PCR quantitative" },
+    { "external_code": "PCR_VHB", "external_name": "PCR VHB" },
+    { "external_code": "PCR_VHC", "external_name": "PCR VHC" },
+    { "external_code": "PCR_VIH", "external_name": "PCR VIH" },
+    { "external_code": "PCR_TB", "external_name": "PCR Tuberculose" },
+    { "external_code": "Caryotype", "external_name": "Caryotype" },
+    { "external_code": "FISH", "external_name": "Hybridation in situ fluorescente" },
+    { "external_code": "Microarray", "external_name": "Puce à ADN chromosomique" },
+    { "external_code": "Seq_Sanger", "external_name": "Séquençage Sanger" },
+    { "external_code": "NGS", "external_name": "Séquençage nouvelle génération" },
+    { "external_code": "MLPA", "external_name": "MLPA" },
+    { "external_code": "Fragilite_X", "external_name": "Syndrome de l'X fragile" }
+  ]
+}

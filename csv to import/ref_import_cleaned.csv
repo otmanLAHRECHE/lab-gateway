@@ -1,0 +1,456 @@
+analyse_id,analyse_code,analyse_libelle,sous_analyse_id,sous_code,sous_libelle,unit,data_type,domaine_analyse
+1,NFS,Numération formule sanguine,101,WBC,Globules blancs,10^9/L,NM,HEMATOLOGIE
+1,NFS,Numération formule sanguine,102,RBC,Globules rouges,10^12/L,NM,HEMATOLOGIE
+1,NFS,Numération formule sanguine,103,HGB,Hémoglobine,g/dL,NM,HEMATOLOGIE
+1,NFS,Numération formule sanguine,104,HCT,Hémoglobine,%,NM,HEMATOLOGIE
+1,NFS,Numération formule sanguine,105,MCV,Volume globulaire moyen,fL,NM,HEMATOLOGIE
+1,NFS,Numération formule sanguine,106,MCH,Teneur corpusculaire moyenne en Hb,pg,NM,HEMATOLOGIE
+1,NFS,Numération formule sanguine,107,MCHC,Concentration corpusculaire moyenne en Hb,g/dL,NM,HEMATOLOGIE
+1,NFS,Numération formule sanguine,108,PLT,Plaquettes,10^9/L,NM,HEMATOLOGIE
+1,NFS,Numération formule sanguine,109,NEU,Neutrophiles,%,NM,HEMATOLOGIE
+1,NFS,Numération formule sanguine,110,LYM,Lymphocytes,%,NM,HEMATOLOGIE
+2,ION,Ionogramme sanguin,201,NA,Sodium,mmol/L,NM,BIOCHIMIE
+2,ION,Ionogramme sanguin,202,K,Potassium,mmol/L,NM,BIOCHIMIE
+2,ION,Ionogramme sanguin,203,CL,Chlorure,mmol/L,NM,BIOCHIMIE
+2,ION,Ionogramme sanguin,204,HCO3,Bicarbonate,mmol/L,NM,BIOCHIMIE
+2,ION,Ionogramme sanguin,205,CA,Calcium,mmol/L,NM,BIOCHIMIE
+3,BIO,Bilan rénal,301,UREA,Urée,mmol/L,NM,BIOCHIMIE
+3,BIO,Bilan rénal,302,CREAT,Créatinine,µmol/L,NM,BIOCHIMIE
+3,BIO,Bilan rénal,303,EGFR,Débit de filtration glomérulaire estimé,mL/min,NM,BIOCHIMIE
+4,GLU,Glucose sanguin,401,GLU,Glucose sanguin,mmol/L,NM,BIOCHIMIE
+5,LIP,Bilan lipidique,501,CHOL,Cholestérol total,mmol/L,NM,BIOCHIMIE
+5,LIP,Bilan lipidique,502,HDL,Cholestérol HDL,mmol/L,NM,BIOCHIMIE
+5,LIP,Bilan lipidique,503,LDL,Cholestérol LDL,mmol/L,NM,BIOCHIMIE
+5,LIP,Bilan lipidique,504,TRIG,Triglycérides,mmol/L,NM,BIOCHIMIE
+6,HEP,Bilan hépatique,601,ALT,ALAT (GPT),U/L,NM,BIOCHIMIE
+6,HEP,Bilan hépatique,602,AST,ASAT (GOT),U/L,NM,BIOCHIMIE
+6,HEP,Bilan hépatique,603,ALP,Phosphatases alcalines,U/L,NM,BIOCHIMIE
+6,HEP,Bilan hépatique,604,GGT,Gamma GT,U/L,NM,BIOCHIMIE
+6,HEP,Bilan hépatique,605,BILI,Bilirubine totale,µmol/L,NM,BIOCHIMIE
+7,CRP,Protéine C-réactive,701,CRP,Protéine C-réactive,mg/L,NM,IMMUNOLOGIE
+8,THY,Bilan thyroïdien,801,TSH,Thyroid stimulating hormone,mIU/L,NM,HORMONOLOGIE
+8,THY,Bilan thyroïdien,802,FT4,Thyroxine libre,pmol/L,NM,HORMONOLOGIE
+8,THY,Bilan thyroïdien,803,FT3,Triiodothyronine libre,pmol/L,NM,HORMONOLOGIE
+9,COAG,Bilan de coagulation,901,TP,Taux de prothrombine,%,NM,HEMOSTASE
+9,COAG,Bilan de coagulation,902,INR,International Normalized Ratio,,NM,HEMOSTASE
+9,COAG,Bilan de coagulation,903,TCA,Temps de céphaline activée,sec,NM,HEMOSTASE
+9,COAG,Bilan de coagulation,904,FIB,Fibrinogène,g/L,NM,HEMOSTASE
+10,FER,Bilan du fer,1001,FER,Fer sérique,Âµmol/L,NM,BIOCHIMIE
+10,FER,Bilan du fer,1002,FERR,Ferritine,ng/mL,NM,BIOCHIMIE
+10,FER,Bilan du fer,1003,TRANS,Transferrine,g/L,NM,BIOCHIMIE
+10,FER,Bilan du fer,1004,CSAT,Coefficient saturation transferrine,%,NM,BIOCHIMIE
+11,DIAB,Bilan diabétique,1101,HBA1C,Hémoglobine glyquée,%,NM,BIOCHIMIE
+11,DIAB,Bilan diabétique,1102,GLUFAST,Glycémie à jeun,mmol/L,NM,BIOCHIMIE
+11,DIAB,Bilan diabétique,1103,GLU2H,Glycémie 2h après charge,mmol/L,NM,BIOCHIMIE
+12,MIN,Bilan minéral,1201,MG,Magnésium,mmol/L,NM,BIOCHIMIE
+12,MIN,Bilan minéral,1202,PHOS,Phosphore,mmol/L,NM,BIOCHIMIE
+12,MIN,Bilan minéral,1203,ZINC,Zinc,Âµmol/L,NM,BIOCHIMIE
+13,INF,Marqueurs infectieux,1301,PCT,Procalcitonine,ng/mL,NM,IMMUNOLOGIE
+13,INF,Marqueurs infectieux,1302,VS,Vitesse de sédimentation,mm/h,NM,IMMUNOLOGIE
+13,INF,Marqueurs infectieux,1303,IL6,Interleukine 6,pg/mL,NM,IMMUNOLOGIE
+14,CARD,Bilan cardiaque,1401,TROP,Troponine,ng/L,NM,CARDIOLOGIE
+14,CARD,Bilan cardiaque,1402,CK,CrÃ©atine kinase,U/L,NM,CARDIOLOGIE
+14,CARD,Bilan cardiaque,1403,CKMB,CK-MB,U/L,NM,CARDIOLOGIE
+14,CARD,Bilan cardiaque,1404,BNP,Brain natriuretic peptide,pg/mL,NM,CARDIOLOGIE
+15,VIT,Bilan vitaminique,1501,VITD,Vitamine D,ng/mL,NM,BIOCHIMIE
+15,VIT,Bilan vitaminique,1502,VITB12,Vitamine B12,pg/mL,NM,BIOCHIMIE
+15,VIT,Bilan vitaminique,1503,FOL,Acide folique,ng/mL,NM,BIOCHIMIE
+16,HORM,Bilan hormonal,1601,PRL,Prolactine,ng/mL,NM,HORMONOLOGIE
+16,HORM,Bilan hormonal,1602,LH,Hormone lutéinisante,UI/L,NM,HORMONOLOGIE
+16,HORM,Bilan hormonal,1603,FSH,Hormone folliculo-stimulante,UI/L,NM,HORMONOLOGIE
+16,HORM,Bilan hormonal,1604,TESTO,Testostérone,ng/mL,NM,HORMONOLOGIE
+17,URINE,Analyse d'urine,1701,PHU,pH urinaire,,NM,URINE
+17,URINE,Analyse d'urine,1702,PROT,Protéinurie,mg/L,NM,URINE
+17,URINE,Analyse d'urine,1703,GLUUR,Glycosurie,mmol/L,NM,URINE
+17,URINE,Analyse d'urine,1704,KET,Cétonurie,mmol/L,NM,URINE
+18,GAZ,Gaz du sang,1801,PH,pH sanguin,,NM,GAZ_SANG
+18,GAZ,Gaz du sang,1802,PCO2,Pression partielle CO2,mmHg,NM,GAZ_SANG
+18,GAZ,Gaz du sang,1803,PO2,Pression partielle O2,mmHg,NM,GAZ_SANG
+18,GAZ,Gaz du sang,1804,HCO3_GAZ,Bicarbonate,mmol/L,NM,GAZ_SANG
+18,GAZ,Gaz du sang,1805,SO2,Saturation en oxygène,%,NM,GAZ_SANG
+19,HEP_19,Hépatique,1901,ALT_HEP_19,ALAT,U/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1902,AST_HEP_19,ASAT,U/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1903,ALP_HEP_19,Phosphatase alcaline,U/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1904,GGT_HEP_19,Gamma-GT,U/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1905,TBIL,Bilirubine totale,mg/dL ou µmol/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1906,DBIL,Bilirubine directe,mg/dL ou µmol/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1907,IBIL,Bilirubine indirecte,mg/dL ou µmol/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1908,TP_HEP_19,ProtÃ©ines totales,g/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1909,ALB,Albumine,g/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1910,AG,Rapport Albumine/Globuline,Ratio,NM,HEPATIQUE
+19,HEP_19,Hépatique,1911,GLOB,Globulines,g/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1912,CHE,Cholinestérase,U/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1913,NH3,Ammoniac,Âµmol/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1914,BALE,Acides biliaires,Âµmol/L,NM,HEPATIQUE
+19,HEP_19,Hépatique,1915,5NUC,5'-Nucléotidase,U/L,NM,HEPATIQUE
+20,REN,Rénal,2001,UREA_REN,Urée,mmol/L ou mg/dL,NM,RENAL
+20,REN,Rénal,2002,BUN,Azote uréique,mg/dL,NM,RENAL
+20,REN,Rénal,2003,CREA,Créatinine,Âµmol/L ou mg/dL,NM,RENAL
+20,REN,Rénal,2004,UA,Acide urique,Âµmol/L ou mg/dL,NM,RENAL
+20,REN,Rénal,2005,CYST,Cystatine C,mg/L,NM,RENAL
+20,REN,Rénal,2006,CREACL,Clairance de la créatinine,mL/min/1.73mÂ²,NM,RENAL
+21,MET,MÃ©tabolique,2101,GLU_MET,Glucose,mmol/L ou mg/dL,NM,METABOLIQUE
+21,MET,MÃ©tabolique,2102,HBA1C_MET,Hémoglobine glyquée,% ou mmol/mol,NM,METABOLIQUE
+21,MET,MÃ©tabolique,2103,FRUCT,Fructosamine,Âµmol/L,NM,METABOLIQUE
+21,MET,MÃ©tabolique,2104,LACT,Lactate,mmol/L,NM,METABOLIQUE
+21,MET,MÃ©tabolique,2105,PYR,Pyruvate,mmol/L,NM,METABOLIQUE
+21,MET,MÃ©tabolique,2106,CETON,Corps cétoniques,mg/dL ou mmol/L,NM,METABOLIQUE
+21,MET,MÃ©tabolique,2107,BHB,Bêta-Hydroxybutyrate,mmol/L,NM,METABOLIQUE
+21,MET,MÃ©tabolique,2108,ACAC,Acetoacetate,mg/dL ou mmol/L,NM,METABOLIQUE
+22,LIP_22,Lipidique,2201,TCHO,Cholestérol total,mmol/L ou mg/dL,NM,LIPIDIQUE
+22,LIP_22,Lipidique,2202,TG,Triglycérides,mmol/L ou mg/dL,NM,LIPIDIQUE
+22,LIP_22,Lipidique,2203,HDL_LIP_22,HDL-Cholestérol,mmol/L ou mg/dL,NM,LIPIDIQUE
+22,LIP_22,Lipidique,2204,LDL_LIP_22,LDL-Cholestérol,mmol/L ou mg/dL,NM,LIPIDIQUE
+22,LIP_22,Lipidique,2205,VLDL,VLDL-Cholestérol,mmol/L ou mg/dL,NM,LIPIDIQUE
+22,LIP_22,Lipidique,2206,APOA1,Apolipoprotéine A1,g/L,NM,LIPIDIQUE
+22,LIP_22,Lipidique,2207,APOB,Apolipoprotéine B,g/L,NM,LIPIDIQUE
+22,LIP_22,Lipidique,2208,LPA,Lipoprotéine (a),mg/dL ou nmol/L,NM,LIPIDIQUE
+22,LIP_22,Lipidique,2209,NONHDL,Cholestérol non-HDL,mmol/L ou mg/dL,NM,LIPIDIQUE
+23,CARD_23,Cardiaque,2301,CK_CARD_23,Créatine kinase,U/L,NM,CARDIAQUE
+23,CARD_23,Cardiaque,2302,CKMB_CARD_23,CK-MB,U/L ou %,NM,CARDIAQUE
+23,CARD_23,Cardiaque,2303,LDH,Lactate déshydrogénase,U/L,NM,CARDIAQUE
+23,CARD_23,Cardiaque,2304,HBDH,Hydroxybutyrate déshydrogénase,U/L,NM,CARDIAQUE
+23,CARD_23,Cardiaque,2305,MYO,Myoglobine,ng/mL,NM,CARDIAQUE
+23,CARD_23,Cardiaque,2306,TROP_CARD_23,Troponine I / Troponine T,ng/mL,NM,CARDIAQUE
+24,ELE,Électrolytes,2401,NA_ELE,Sodium,mmol/L,NM,ELECTROLYTES
+24,ELE,Électrolytes,2402,K_ELE,Potassium,mmol/L,NM,ELECTROLYTES
+24,ELE,Électrolytes,2403,CL_ELE,Chlorures,mmol/L,NM,ELECTROLYTES
+24,ELE,Électrolytes,2404,CA_ELE,Calcium,mmol/L ou mg/dL,NM,ELECTROLYTES
+24,ELE,Électrolytes,2405,ICA,Calcium ionisé,mmol/L,NM,ELECTROLYTES
+24,ELE,Électrolytes,2406,MG_ELE,Magnésium,mmol/L ou mg/dL,NM,ELECTROLYTES
+24,ELE,Électrolytes,2407,P,Phosphore,mmol/L ou mg/dL,NM,ELECTROLYTES
+24,ELE,Électrolytes,2408,BIC,Bicarbonates,mmol/L,NM,ELECTROLYTES
+24,ELE,Électrolytes,2409,CO2,CO2 total,mmol/L,NM,ELECTROLYTES
+24,ELE,Électrolytes,2410,AG_ELE,Anion Gap,mmol/L,NM,ELECTROLYTES
+24,ELE,Électrolytes,2411,OSM,Osmolality,mOsm/kg,NM,ELECTROLYTES
+25,CAR,Carence,2501,FE,Fer,µmol/L,NM,CARENCE
+25,CAR,Carence,2502,TIBC,Capacité totale de fixation du fer,µmol/L,NM,CARENCE
+25,CAR,Carence,2503,UIBC,Capacité de fixation du fer non saturée,µmol/L,NM,CARENCE
+25,CAR,Carence,2504,TRANS_CAR,Transferrine,g/L,NM,CARENCE
+25,CAR,Carence,2505,TSAT,Saturation de la transferrine,%,NM,CARENCE
+25,CAR,Carence,2506,FERR_CAR,Ferritine,ng/mL,NM,CARENCE
+26,PAN,Pancréatique,2601,AMY,Amylase,U/L,NM,PANCREATIQUE
+26,PAN,Pancréatique,2602,LIP,Lipase,U/L,NM,PANCREATIQUE
+26,PAN,Pancréatique,2603,PAMY,Amylase pancréatique,U/L,NM,PANCREATIQUE
+26,PAN,Pancréatique,2604,TRY,Trypsine,ng/mL,NM,PANCREATIQUE
+27,INF_27,Inflammatoire,2701,CRP_INF_27,Protéine C réactive,mg/L,NM,INFLAMMATOIRE
+27,INF_27,Inflammatoire,2702,HSCRP,CRP ultrasensible,mg/L,NM,INFLAMMATOIRE
+27,INF_27,Inflammatoire,2703,ADA,Adénosine désaminase,U/L,NM,INFLAMMATOIRE
+27,INF_27,Inflammatoire,2704,ACE,Enzyme de conversion de l'angiotensine,U/L,NM,INFLAMMATOIRE
+27,INF_27,Inflammatoire,2705,A1AT,Alpha-1-antitrypsine,g/L,NM,INFLAMMATOIRE
+27,INF_27,Inflammatoire,2706,CER,Céruloplasmine,g/L,NM,INFLAMMATOIRE
+27,INF_27,Inflammatoire,2707,HAP,Haptoglobine,g/L,NM,INFLAMMATOIRE
+28,OLI,Oligo-élément,2801,CU,Cuivre,µmol/L,NM,OLIGO-ELEMENT
+28,OLI,Oligo-élément,2802,ZN,Zinc,µmol/L,NM,OLIGO-ELEMENT
+28,OLI,Oligo-élément,2803,SE,Sélénium,µg/L,NM,OLIGO-ELEMENT
+29,TOX,Toxique,2901,PB,Plomb,µmol/L,NM,TOXIQUE
+29,TOX,Toxique,2902,AS,Arsenic,µmol/L,NM,TOXIQUE
+29,TOX,Toxique,2903,HG,Mercure,µg/L,NM,TOXIQUE
+30,HEM,Hématologie,3001,WBC_HEM,Globules blancs,10³/µL ou G/L,NM,HEMATOLOGIE
+30,HEM,Hématologie,3002,RBC_HEM,Globules rouges,10?/µL ou T/L,NM,HEMATOLOGIE
+30,HEM,Hématologie,3003,HGB_HEM,Hémoglobine,g/dL,NM,HEMATOLOGIE
+30,HEM,Hématologie,3004,HCT_HEM,Hématocrite,%,NM,HEMATOLOGIE
+30,HEM,Hématologie,3005,MCV_HEM,Volume globulaire moyen,fL,NM,HEMATOLOGIE
+30,HEM,Hématologie,3006,MCH_HEM,Teneur corpusculaire moyenne en hémoglobine,pg,NM,HEMATOLOGIE
+30,HEM,Hématologie,3007,MCHC_HEM,Concentration corpusculaire moyenne en hémoglobine,g/dL,NM,HEMATOLOGIE
+30,HEM,Hématologie,3008,RDWCV,RDW-CV,%,NM,HEMATOLOGIE
+30,HEM,Hématologie,3009,RDWSD,RDW-SD,fL,NM,HEMATOLOGIE
+30,HEM,Hématologie,3010,RETIC,Réticulocytes,% ou 10³/µL,NM,HEMATOLOGIE
+30,HEM,Hématologie,3011,RET-HE,Hémoglobine réticulocytaire,pg,NM,HEMATOLOGIE
+30,HEM,Hématologie,3012,IRF,Fraction immature des réticulocytes,%,NM,HEMATOLOGIE
+30,HEM,Hématologie,3013,PLT_HEM,Plaquettes,10³/µL ou G/L,NM,HEMATOLOGIE
+30,HEM,Hématologie,3014,MPV,Volume plaquettaire moyen,fL,NM,HEMATOLOGIE
+30,HEM,Hématologie,3015,PDW,Distribution des plaquettes,fL,NM,HEMATOLOGIE
+30,HEM,Hématologie,3016,PCT_HEM,Thrombocrite,%,NM,HEMATOLOGIE
+30,HEM,Hématologie,3017,IPF,Fraction immature des plaquettes,%,NM,HEMATOLOGIE
+30,HEM,Hématologie,3018,NEUT,Neutrophiles,10³/µL ou %,NM,HEMATOLOGIE
+30,HEM,Hématologie,3019,LYMPH,Lymphocytes,10³/µL ou %,NM,HEMATOLOGIE
+30,HEM,Hématologie,3020,MONO,Monocytes,10³/µL ou %,NM,HEMATOLOGIE
+30,HEM,Hématologie,3021,EO,Éosinophiles,10³/µL ou %,NM,HEMATOLOGIE
+30,HEM,Hématologie,3022,BASO,Basophiles,10³/µL ou %,NM,HEMATOLOGIE
+30,HEM,Hématologie,3023,IG,Granulocytes immatures,10³/µL ou %,NM,HEMATOLOGIE
+31,HEMO,Hématologie,3101,ESR,Vitesse de sédimentation,mm/h,NM,HEMOSTASE
+31,HEMO,Hématologie,3102,PT,Temps de prothrombine,secondes,NM,HEMOSTASE
+31,HEMO,Hématologie,3103,INR_HEMO,INR,ratio,NM,HEMOSTASE
+31,HEMO,Hématologie,3104,PTP,Taux de prothrombine,%,NM,HEMOSTASE
+31,HEMO,Hématologie,3105,APTT,Temps de céphaline activée,secondes,NM,HEMOSTASE
+31,HEMO,Hématologie,3106,FIB_HEMO,Fibrinogène,g/L,NM,HEMOSTASE
+31,HEMO,Hématologie,3107,TT,Temps de thrombine,secondes,NM,HEMOSTASE
+31,HEMO,Hématologie,3108,DD,D-Dimeres,µg/L ou ng/mL,NM,HEMOSTASE
+31,HEMO,Hématologie,3109,FDP,Produits de dégradation de la fibrine,µg/mL,NM,HEMOSTASE
+31,HEMO,Hématologie,3110,ATIII,Antithrombine III,%,NM,HEMOSTASE
+31,HEMO,Hématologie,3111,PROC,Protein C,%,NM,HEMOSTASE
+31,HEMO,Hématologie,3112,PROS,Protein S,%,NM,HEMOSTASE
+31,HEMO,Hématologie,3113,PLAS,Plasminogen,%,NM,HEMOSTASE
+31,HEMO,Hématologie,3114,VWFA,vWF Ag,%,NM,HEMOSTASE
+31,HEMO,Hématologie,3115,VWFACT,vWF Act,%,NM,HEMOSTASE
+31,HEMO,Hématologie,3116,BT,Bleeding time,minutes,NM,HEMOSTASE
+32,THY_32,Thyroïdien,3201,TSH_THY_32,TSH,mUI/L,NM,THYROIDIEN
+32,THY_32,Thyroïdien,3202,FT3_THY_32,T3 libre,pmol/L,NM,THYROIDIEN
+32,THY_32,Thyroïdien,3203,FT4_THY_32,T4 libre,pmol/L,NM,THYROIDIEN
+32,THY_32,Thyroïdien,3204,T3,T3 totale,nmol/L,NM,THYROIDIEN
+32,THY_32,Thyroïdien,3205,T4,T4 totale,nmol/L,NM,THYROIDIEN
+32,THY_32,Thyroïdien,3206,ANTI-TPO,Anti-TPO,UI/mL,NM,THYROIDIEN
+32,THY_32,Thyroïdien,3207,ANTI-TG,Anti-TG,UI/mL,NM,THYROIDIEN
+32,THY_32,Thyroïdien,3208,TBG,TBG,mg/L,NM,THYROIDIEN
+32,THY_32,Thyroïdien,3209,THYROG,Thyroglobulin,ng/mL,NM,THYROIDIEN
+32,THY_32,Thyroïdien,3210,TSI,TSI,UI/mL,NM,THYROIDIEN
+32,THY_32,Thyroïdien,3211,CALC,Calcitonin,pg/mL,NM,THYROIDIEN
+33,FER2,Carence fer,3301,FE_FER2,Fe,Âµmol/L,NM,CARANCE
+33,FER2,Carence fer,3302,TIBC_FER2,TIBC,Âµmol/L,NM,CARANCE
+33,FER2,Carence fer,3303,UIBC_FER2,UIBC,Âµmol/L,NM,CARANCE
+33,FER2,Carence fer,3304,TRANS_FER2,Transferrin,g/L,NM,CARANCE
+33,FER2,Carence fer,3305,TSAT_FER2,Transferrin Sat,%,NM,CARANCE
+33,FER2,Carence fer,3306,FERR_FER2,Ferritin,ng/mL,NM,CARANCE
+34,IMM,Immunitaire,3401,IGG,IgG,g/L,NM,IMMUNOLOGIE
+34,IMM,Immunitaire,3402,IGA,IgA,g/L,NM,IMMUNOLOGIE
+34,IMM,Immunitaire,3403,IGM,IgM,g/L,NM,IMMUNOLOGIE
+34,IMM,Immunitaire,3404,IGE,IgE,UI/mL,NM,IMMUNOLOGIE
+34,IMM,Immunitaire,3405,IGD,IgD,mg/L,NM,IMMUNOLOGIE
+34,IMM,Immunitaire,3406,KAP,Kappa,mg/L,NM,IMMUNOLOGIE
+34,IMM,Immunitaire,3407,LAMB,Lambda,mg/L,NM,IMMUNOLOGIE
+34,IMM,Immunitaire,3408,KLR,Kappa/Lambda,Ratio,NM,IMMUNOLOGIE
+34,IMM,Immunitaire,3409,PROTEIN-E,Protein electro,-,NM,IMMUNOLOGIE
+34,IMM,Immunitaire,3410,IMF,Immunofixation,-,NM,IMMUNOLOGIE
+35,AUTO,Auto-immun,3501,ANA,ANA,titres,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3502,ANTI-DSDNA,Anti-dsDNA,UI/mL,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3503,ANTI-ENA,Anti-ENA,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3504,ANTI-SM,Anti-Sm,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3505,ANTI-RNP,Anti-RNP,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3506,ANTI-SSA,Anti-SSA/Ro,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3507,ANTI-SSB,Anti-SSB/La,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3508,ANTI-SCL70,Anti-Scl70,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3509,ANTI-JO1,Anti-Jo1,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3510,ANTI-CCP,Anti-CCP,U/mL,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3511,RF,RF,UI/mL,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3512,ASLO,ASLO,UI/mL,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3513,ANCA,ANCA,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3514,ANTI-MPO,Anti-MPO,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3515,ANTI-PR3,Anti-PR3,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3516,ANTI-GBM,Anti-GBM,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3517,ANTI-MITO,Anti-mitochondrial,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3518,ANTI-SMTH,Anti-smooth muscle,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3519,ANTI-LKM,Anti-LKM,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3520,ANTI-PARI,Anti-parietal,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3521,ANTI-IF,Anti-intrinsic factor,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3522,ANTI-TTG,Anti-transglutaminase,U/mL,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3523,ANTI-ENDO,Anti-endomysium,-,NM,AUTO-IMMUN
+35,AUTO,Auto-immun,3524,ANTI-GLI,Anti-gliadin,U/mL,NM,AUTO-IMMUN
+36,MICRO,Microbiologie,3601,ECBU,ECBU,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3602,CSU,CSU,UFC/mL,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3603,HEMO,Hemoculture,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3604,HEMO-ANA,Hemoculture Ana,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3605,COPO,Coproculture,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3606,CSP,Culture crachats,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3607,LCR,LCR culture,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3608,LIQ,Liquid culture,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3609,PUS,Pus culture,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3610,PVC,Prélèvement vaginal avec culture,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3611,PU,Prélèvement urétral,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3612,SPER,Spermo culture,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3613,SWAB,Culture d’écouvillon,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3614,ANAER,Anaerobic culture,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3615,MYCULT,Mycobacteria culture,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3616,FUNG,Culture fongique,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3617,MYID,Mycobacteria ID,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3618,FUNGID,Fungi ID,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3619,AST_MICRO,Antibiogramme,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3620,CMI,CMI,µg/mL,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3621,CMB,CMB,µg/mL,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3622,BK,BK,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3623,GRAM,Gram,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3624,ZIEHL,Ziehl,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3625,INK,India ink,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3626,LP,Lactophenol,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3627,KOH,KOH,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3628,CAT,Catalase,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3629,COAG,Coagulase,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3630,OX,Oxydase,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3631,URE,Urease,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3632,IND,Indole,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3633,CIT,Citrate,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3634,BILE,Bile esculin,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3635,OPTO,Optochin,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3636,NOV,Novobiocin,-,NM,MICROBIOLOGIE
+36,MICRO,Microbiologie,3637,BLAC,Beta-lactamase,-,NM,MICROBIOLOGIE
+37,PATH,Pathologie,3701,BX,Biopsie standard,-,NM,PATHOLOGIE
+37,PATH,Pathologie,3702,BXEX,Biopsie extemporanée,-,NM,PATHOLOGIE
+37,PATH,Pathologie,3703,PCE,Pièce opératoire,-,NM,PATHOLOGIE
+37,PATH,Pathologie,3704,CYT,Cytologie,-,NM,PATHOLOGIE
+37,PATH,Pathologie,3705,FRO,Frottis,-,NM,PATHOLOGIE
+37,PATH,Pathologie,3706,LBC,LBC,-,NM,PATHOLOGIE
+37,PATH,Pathologie,3707,ACP,ACP,-,NM,PATHOLOGIE
+37,PATH,Pathologie,3708,LIQCYT,Liquide cytologie,-,NM,PATHOLOGIE
+37,PATH,Pathologie,3709,PUN,Ponction,-,NM,PATHOLOGIE
+37,PATH,Pathologie,3710,IHC,IHC,-,NM,PATHOLOGIE
+37,PATH,Pathologie,3711,FISHT,FISH tissue,-,NM,PATHOLOGIE
+37,PATH,Pathologie,3712,HER2,Her2 IHC,Score 0-3+,NM,PATHOLOGIE
+37,PATH,Pathologie,3713,ER,ER IHC,%,NM,PATHOLOGIE
+37,PATH,Pathologie,3714,PR,PR IHC,%,NM,PATHOLOGIE
+37,PATH,Pathologie,3715,KI67,Ki67,%,NM,PATHOLOGIE
+37,PATH,Pathologie,3716,P53,P53,%,NM,PATHOLOGIE
+37,PATH,Pathologie,3717,PDL1,PD-L1,Score,NM,PATHOLOGIE
+37,PATH,Pathologie,3718,MMR,MMR,-,NM,PATHOLOGIE
+37,PATH,Pathologie,3719,MSI,MSI,-,NM,PATHOLOGIE
+38,MOL,MolÃ©culaire,3801,PCRQ,PCR quantitative,copies/mL ou UI/mL,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3802,PCRSARS,PCR SARS-CoV-2,-,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3803,PCRVHB,PCR VHB,UI/mL,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3804,PCRVHC,PCR VHC,UI/mL,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3805,PCRVIH,PCR VIH,copies/mL,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3806,PCRCMV,PCR CMV,UI/mL,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3807,PCREBV,PCR EBV,copies/mL,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3808,PCRHSV,PCR HSV,-,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3809,PCRVZV,PCR VZV,-,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3810,PCRBK,PCR BK virus,copies/mL,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3811,PCRTB,PCR TB,-,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3812,PCRToxo,PCR Toxo,-,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3813,PCRHPV,PCR HPV,-,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3814,PCRBOR,PCR Borrelia,-,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3815,PCRFUN,PCR Fungi,-,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3816,MULTIRES,Multiplex respiratory,-,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3817,MULTIGAST,Multiplex gastro,-,NM,MOLECULAIRE
+38,MOL,MolÃ©culaire,3818,MULTIMEN,Multiplex meningitis,-,NM,MOLECULAIRE
+39,CYT,Chromosomique,3901,CARY,Caryotype,-,NM,CYTOGENETIQUE
+39,CYT,Chromosomique,3902,CARYMED,Caryotype médullaire,-,NM,CYTOGENETIQUE
+39,CYT,Chromosomique,3903,FISH,FISH,-,NM,CYTOGENETIQUE
+39,CYT,Chromosomique,3904,FISHHER2,FISH HER2,Ratio,NM,CYTOGENETIQUE
+39,CYT,Chromosomique,3905,FISH1P19Q,FISH 1p19q,-,NM,CYTOGENETIQUE
+39,CYT,Chromosomique,3906,FISHBCR,FISH BCR-ABL,%,NM,CYTOGENETIQUE
+39,CYT,Chromosomique,3907,FISHMLL,FISH MLL,-,NM,CYTOGENETIQUE
+40,NGS,NGS,4001,NGS_PANEL,NGS panel,-,NM,MOLECULAIRE
+40,NGS,NGS,4002,NGS_ADN,NGS ADN,-,NM,MOLECULAIRE
+40,NGS,NGS,4003,NGS_ARN,NGS ARN,-,NM,MOLECULAIRE
+40,NGS,NGS,4004,NGS_LIQ,NGS liquid biopsy,-,NM,MOLECULAIRE
+40,NGS,NGS,4005,SANGER,Seq Sanger,-,NM,MOLECULAIRE
+40,NGS,NGS,4006,PYRO,Pyrosequencing,-,NM,MOLECULAIRE
+40,NGS,NGS,4007,METH,Methylation,-,NM,EPIGENETIQUE
+40,NGS,NGS,4008,MGMT,MGMT methylation,%,NM,EPIGENETIQUE
+41,GEN,Genetique,4101,FRAGILE,Fragile X,-,NM,MOLECULAIRE
+41,GEN,Genetique,4102,BRCA,BRCA1/2,-,NM,MOLECULAIRE
+41,GEN,Genetique,4103,FV,Factor V Leiden,-,NM,MOLECULAIRE
+41,GEN,Genetique,4104,PROT_GEN,Prothrombin mutation,-,NM,MOLECULAIRE
+41,GEN,Genetique,4105,HFE,HFE,-,NM,MOLECULAIRE
+41,GEN,Genetique,4106,HLA-B27,HLA-B27,-,NM,MOLECULAIRE
+41,GEN,Genetique,4107,HLA-TYP,HLA typing,-,NM,MOLECULAIRE
+41,GEN,Genetique,4108,CLON-Ig,Clonality Ig,-,NM,MOLECULAIRE
+41,GEN,Genetique,4109,CLON-TCR,Clonality TCR,-,NM,MOLECULAIRE
+41,GEN,Genetique,4110,MICROS,Microsatellites,-,NM,MOLECULAIRE
+42,PHAR,Pharmacogenetique,4201,DPD,DPD genotyping,-,NM,PHARMACOGENETIQUE
+42,PHAR,Pharmacogenetique,4202,TPMT,TPMT genotyping,-,NM,PHARMACOGENETIQUE
+42,PHAR,Pharmacogenetique,4203,CYP2C19,CYP2C19,-,NM,PHARMACOGENETIQUE
+42,PHAR,Pharmacogenetique,4204,CYP2D6,CYP2D6,-,NM,PHARMACOGENETIQUE
+42,PHAR,Pharmacogenetique,4205,CYP3A5,CYP3A5,-,NM,PHARMACOGENETIQUE
+42,PHAR,Pharmacogenetique,4206,UGT1A1,UGT1A1,-,NM,PHARMACOGENETIQUE
+43,ENDO,Endocrinologie,4301,PSA,PSA total,ng/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4302,FREEPSA,Free PSA,ng/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4303,FP_RATIO,fPSA ratio,%,NM,TUMORAL
+43,ENDO,Endocrinologie,4304,CEA,CEA,ng/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4305,AFP,AFP,ng/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4306,CA125,CA125,U/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4307,CA153,CA153,U/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4308,CA199,CA199,U/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4309,CA2729,CA27.29,U/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4310,CA724,CA72-4,U/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4311,CYFRA,CYFRA 21-1,ng/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4312,NSE,NSE,ng/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4313,PROGRP,ProGRP,pg/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4314,S100,S100,Âµg/L,NM,TUMORAL
+43,ENDO,Endocrinologie,4315,HE4,HE4,pmol/L,NM,TUMORAL
+43,ENDO,Endocrinologie,4316,ROMA,ROMA index,-,NM,TUMORAL
+43,ENDO,Endocrinologie,4317,THYROG_ENDO,Thyroglobulin,ng/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4318,TGAB,TgAb,UI/mL,NM,TUMORAL
+43,ENDO,Endocrinologie,4319,B2M,?2-microglobuline,mg/L,NM,TUMORAL
+44,IMM2,Immunitaire 2,4401,ANA2,ANA,-,NM,IMMUNOLOGIE
+44,IMM2,Immunitaire 2,4402,PROTEIN-E2,Protein electro,-,NM,IMMUNOLOGIE
+45,ENDO2,Endocrine fertility,4501,FSH_ENDO2,FSH,UI/L,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4502,LH_ENDO2,LH,UI/L,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4503,PRL_ENDO2,Prolactine,mUI/L ou ng/mL,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4504,E2,Œstradiol,pmol/L ou pg/mL,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4505,PROG,Progestérone,nmol/L ou ng/mL,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4506,TESTO_ENDO2,TESTO,nmol/L ou ng/mL,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4507,FREE_TESTO,Free Testo,pg/mL ou pmol/L,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4508,SHBG,SHBG,nmol/L,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4509,AMH,AMH,ng/mL ou pmol/L,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4510,INHIBB,Inhibin B,pg/mL,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4511,DHEA,DHEA,ng/mL,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4512,DHEA-S,DHEA-S,µmol/L ou ng/mL,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4513,ANDRO,Androstenedione,ng/mL,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4514,17OHP,17-OHP,ng/mL,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4515,DHT,DHT,ng/mL,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4516,HCG,hCG totale,UI/L,NM,FERTILITE
+45,ENDO2,Endocrine fertility,4517,HCGb,hCGb,UI/L,NM,FERTILITE
+46,ADREN,SurrÃ©nalien,4601,ACTH,ACTH,pg/mL ou pmol/L,NM,HYPOPHYSAIRE
+46,ADREN,SurrÃ©nalien,4602,CORT,Cortisol,µg/dL ou nmol/L,NM,SURRENAL
+46,ADREN,SurrÃ©nalien,4603,FCORT,Free Cortisol,µg/24h ou nmol/24h,NM,SURRENAL
+46,ADREN,SurrÃ©nalien,4604,SCORT,Salivary Cortisol,ng/mL,NM,SURRENAL
+46,ADREN,SurrÃ©nalien,4605,ALDO,Aldosterone,ng/dL ou pmol/L,NM,SURRENAL
+46,ADREN,SurrÃ©nalien,4606,REN,Renin,ng/mL/h,NM,SURRENAL
+46,ADREN,SurrÃ©nalien,4607,PRA,PRA,ng/mL/h,NM,SURRENAL
+47,GH,Hypophysaire,4701,GH,GH,ng/mL,NM,HYPOPHYSAIRE
+47,GH,Hypophysaire,4702,IGF1,IGF-1,ng/mL,NM,HYPOPHYSAIRE
+47,GH,Hypophysaire,4703,IGFBP3,IGFBP-3,mg/L,NM,HYPOPHYSAIRE
+48,OS,Osseux,4801,PTH,PTH,pg/mL ou pmol/L,NM,OSSEUX
+48,OS,Osseux,4802,VITD_OS,Vitamin D,ng/mL,NM,OSSEUX
+48,OS,Osseux,4803,1_25VIT,"1,25 Vit D",pg/mL,NM,OSSEUX
+48,OS,Osseux,4804,OSTEO,Osteocalcin,ng/mL,NM,OSSEUX
+48,OS,Osseux,4805,P1NP,P1NP,Âµg/L,NM,OSSEUX
+48,OS,Osseux,4806,CTX,CTX,ng/mL,NM,OSSEUX
+48,OS,Osseux,4807,BALP,BALP,U/L ou %,NM,OSSEUX
+49,GAST,Digestif,4901,GAST,Gastrin,pg/mL,NM,DIGESTIF
+49,GAST,Digestif,4902,VIP,VIP,pg/mL,NM,DIGESTIF
+50,PAN2,PancrÃ©atique 2,5001,GLUC,Glucagon,pg/mL,NM,PANCREATIQUE
+50,PAN2,PancrÃ©atique 2,5002,INS,Insulin,ÂµU/mL,NM,PANCREATIQUE
+50,PAN2,PancrÃ©atique 2,5003,CPEP,C-peptide,ng/mL,NM,PANCREATIQUE
+50,PAN2,PancrÃ©atique 2,5004,PROINS,Proinsulin,pmol/L,NM,PANCREATIQUE
+51,VIR,Virale,5101,HBsAg,HBsAg,-,NM,VIRALE
+51,VIR,Virale,5102,HBsAb,HBsAb,mUI/mL,NM,VIRALE
+51,VIR,Virale,5103,HBcAb,HBcAb,-,NM,VIRALE
+51,VIR,Virale,5104,HBeAg,HBeAg,-,NM,VIRALE
+51,VIR,Virale,5105,HBeAb,HBeAb,-,NM,VIRALE
+51,VIR,Virale,5106,HCVAB,HCV Ab,-,NM,VIRALE
+51,VIR,Virale,5107,HIVAB,HIV Ab/Ag,-,NM,VIRALE
+51,VIR,Virale,5108,HIVVL,HIV Viral Load,copies/mL,NM,VIRALE
+51,VIR,Virale,5109,EBV_VCA_IgG,EBV VCA IgG,UI/mL,NM,VIRALE
+51,VIR,Virale,5110,EBV_VCA_IgM,EBV VCA IgM,-,NM,VIRALE
+51,VIR,Virale,5111,EBNA_IgG,EBNA IgG,-,NM,VIRALE
+51,VIR,Virale,5112,CMV_IgG,CMV IgG,UI/mL,NM,VIRALE
+51,VIR,Virale,5113,CMV_IgM,CMV IgM,-,NM,VIRALE
+51,VIR,Virale,5114,HSV_IgG,HSV 1/2 IgG,-,NM,VIRALE
+51,VIR,Virale,5115,HSV_IgM,HSV 1/2 IgM,-,NM,VIRALE
+51,VIR,Virale,5116,VZV_IgG,VZV IgG,-,NM,VIRALE
+51,VIR,Virale,5117,VZV_IgM,VZV IgM,-,NM,VIRALE
+51,VIR,Virale,5118,RUB_IgG,Rubella IgG,UI/mL,NM,VIRALE
+51,VIR,Virale,5119,RUB_IgM,Rubella IgM,-,NM,VIRALE
+51,VIR,Virale,5120,MEAS_IgG,Measles IgG,-,NM,VIRALE
+51,VIR,Virale,5121,MEAS_IgM,Measles IgM,-,NM,VIRALE
+51,VIR,Virale,5122,MUMPS_IgG,Mumps IgG,-,NM,VIRALE
+51,VIR,Virale,5123,MUMPS_IgM,Mumps IgM,-,NM,VIRALE
+51,VIR,Virale,5124,PARVO_IgG,Parvovirus B19 IgG,-,NM,VIRALE
+51,VIR,Virale,5125,PARVO_IgM,Parvovirus B19 IgM,-,NM,VIRALE
+51,VIR,Virale,5126,DENGUE_IgG,Dengue IgG,-,NM,VIRALE
+51,VIR,Virale,5127,DENGUE_IgM,Dengue IgM,-,NM,VIRALE
+51,VIR,Virale,5128,ZIKA_IgG,Zika IgG,-,NM,VIRALE
+51,VIR,Virale,5129,ZIKA_IgM,Zika IgM,-,NM,VIRALE
+51,VIR,Virale,5130,CHIK_IgG,Chikungunya IgG,-,NM,VIRALE
+51,VIR,Virale,5131,CHIK_IgM,Chikungunya IgM,-,NM,VIRALE
+52,PAR,Parasitaire,5201,TOXO_IgG,Toxo IgG,UI/mL,NM,PARASITAIRE
+52,PAR,Parasitaire,5202,TOXO_IgM,Toxo IgM,-,NM,PARASITAIRE
+52,PAR,Parasitaire,5203,TOXO_PCR,Toxo PCR,-,NM,PARASITAIRE
+52,PAR,Parasitaire,5204,HYDAT,Hydatidosis,-,NM,PARASITAIRE
+52,PAR,Parasitaire,5205,LEISH,Leishmania,-,NM,PARASITAIRE
+52,PAR,Parasitaire,5206,MALARIA,Malaria,-,NM,PARASITAIRE
+52,PAR,Parasitaire,5207,SHISTO,Schistosoma,-,NM,PARASITAIRE
+52,PAR,Parasitaire,5208,STRONGY,Strongyloides,-,NM,PARASITAIRE
+53,TOX2,Toxiques 2,5301,PB2,Plomb,µmol/L,NM,TOXIQUE
+53,TOX2,Toxiques 2,5302,AS2,Arsenic,µmol/L,NM,TOXIQUE
+53,TOX2,Toxiques 2,5303,HG2,Mercure,µg/L,NM,TOXIQUE
+54,VIT2,Vitamines,5401,FOL_VIT2,Folate,ng/mL,NM,CARENCES
+54,VIT2,Vitamines,5402,RBCFOL,RBC Folate,ng/mL,NM,CARENCES
+54,VIT2,Vitamines,5403,VITB12_VIT2,Vitamin B12,pg/mL,NM,CARENCES
+54,VIT2,Vitamines,5404,VITB1,Vitamin B1,nmol/L,NM,CARENCES
+54,VIT2,Vitamines,5405,VITB6,Vitamin B6,nmol/L,NM,CARENCES
+54,VIT2,Vitamines,5406,VITA,Vitamin A,µmol/L,NM,CARENCES
+54,VIT2,Vitamines,5407,VITE,Vitamin E,µmol/L,NM,CARENCES
+54,VIT2,Vitamines,5408,VITC,Vitamin C,mg/L,NM,CARENCES
+55,MOLEC,MolÃ©culaire divers,5501,ECBU2,ECBU,-,NM,MICROBIOLOGIE
+55,MOLEC,MolÃ©culaire divers,5502,CSU2,CSU,UFC/mL,NM,MICROBIOLOGIE
